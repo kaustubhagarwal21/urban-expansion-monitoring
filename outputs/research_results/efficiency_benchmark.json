@@ -1,0 +1,34 @@
+{
+  "resnet50": {
+    "total_params": 11309827,
+    "total_params_m": 11.31,
+    "trainable_params": 11309827,
+    "latency_ms": 5.02,
+    "throughput_ps": 199.2,
+    "gpu_memory_mb": 83.4
+  },
+  "efficientnet_b0": {
+    "total_params": 5253167,
+    "total_params_m": 5.25,
+    "trainable_params": 5253167,
+    "latency_ms": 7.14,
+    "throughput_ps": 140.1,
+    "gpu_memory_mb": 52.9
+  },
+  "swin_tiny": {
+    "total_params": 29833341,
+    "total_params_m": 29.83,
+    "trainable_params": 29833341,
+    "latency_ms": 10.98,
+    "throughput_ps": 91.1,
+    "gpu_memory_mb": 176.3
+  },
+  "mobilenet_v3_small": {
+    "total_params": 3391699,
+    "total_params_m": 3.39,
+    "trainable_params": 3391699,
+    "latency_ms": 5.42,
+    "throughput_ps": 184.4,
+    "gpu_memory_mb": 30.5
+  }
+}

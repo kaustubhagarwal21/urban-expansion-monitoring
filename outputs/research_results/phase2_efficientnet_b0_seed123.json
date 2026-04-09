@@ -1,0 +1,16 @@
+{
+  "backbone": "efficientnet_b0",
+  "seed": 123,
+  "oa": 0.9075425790754258,
+  "precision": 0.9264132184436943,
+  "recall": 0.9075425790754258,
+  "f1": 0.9115598089664858,
+  "miou": 0.8087063235983564,
+  "training_time_min": 3.05,
+  "cities": [
+    "Mumbai",
+    "Delhi_NCR",
+    "Bangalore"
+  ],
+  "dataset": "indian_cities_locked"
+}

@@ -1,0 +1,58 @@
+{
+  "backbone": "resnet50",
+  "folds": {
+    "Mumbai": {
+      "oa": 0.8340080971659919,
+      "precision": 0.8768301181752427,
+      "recall": 0.8340080971659919,
+      "f1": 0.8360962676945031,
+      "miou": 0.5379045712379046,
+      "training_time_min": 4.93,
+      "train_cities": [
+        "Delhi_NCR",
+        "Bangalore"
+      ],
+      "train_count": 1630,
+      "val_count": 359,
+      "test_count": 741
+    },
+    "Delhi_NCR": {
+      "oa": 0.7881241565452092,
+      "precision": 0.8395588214376078,
+      "recall": 0.7881241565452092,
+      "f1": 0.8050777662208097,
+      "miou": 0.6179809037574754,
+      "training_time_min": 3.2,
+      "train_cities": [
+        "Mumbai",
+        "Bangalore"
+      ],
+      "train_count": 1023,
+      "val_count": 225,
+      "test_count": 1482
+    },
+    "Bangalore": {
+      "oa": 0.814595660749507,
+      "precision": 0.8198671546531995,
+      "recall": 0.814595660749507,
+      "f1": 0.7832712639768291,
+      "miou": 0.5309069612570786,
+      "training_time_min": 6.13,
+      "train_cities": [
+        "Mumbai",
+        "Delhi_NCR"
+      ],
+      "train_count": 1822,
+      "val_count": 401,
+      "test_count": 507
+    }
+  },
+  "average": {
+    "oa": 0.8122426381535693,
+    "precision": 0.8454186980886833,
+    "recall": 0.8122426381535693,
+    "f1": 0.8081484326307139,
+    "miou": 0.5622641454174863,
+    "training_time_min": 14.259999999999998
+  }
+}

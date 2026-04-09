@@ -1,0 +1,83 @@
+{
+  "Mumbai": {
+    "accuracy": 0.951417004048583,
+    "n_samples": 741,
+    "confusion_matrix": [
+      [
+        162,
+        3,
+        6
+      ],
+      [
+        3,
+        488,
+        19
+      ],
+      [
+        4,
+        1,
+        55
+      ]
+    ],
+    "per_class_acc": {
+      "Urban": 0.9473684210526315,
+      "Non-Urban": 0.9568627450980393,
+      "Transition": 0.9166666666666666
+    },
+    "misclassified": 36
+  },
+  "Delhi_NCR": {
+    "accuracy": 0.9439946018893387,
+    "n_samples": 1482,
+    "confusion_matrix": [
+      [
+        573,
+        2,
+        37
+      ],
+      [
+        0,
+        605,
+        37
+      ],
+      [
+        2,
+        5,
+        221
+      ]
+    ],
+    "per_class_acc": {
+      "Urban": 0.9362745098039216,
+      "Non-Urban": 0.942367601246106,
+      "Transition": 0.9692982456140351
+    },
+    "misclassified": 83
+  },
+  "Bangalore": {
+    "accuracy": 0.8047337278106509,
+    "n_samples": 507,
+    "confusion_matrix": [
+      [
+        253,
+        0,
+        8
+      ],
+      [
+        0,
+        6,
+        51
+      ],
+      [
+        38,
+        2,
+        149
+      ]
+    ],
+    "per_class_acc": {
+      "Urban": 0.9693486590038314,
+      "Non-Urban": 0.10526315789473684,
+      "Transition": 0.7883597883597884
+    },
+    "misclassified": 99
+  }
+}

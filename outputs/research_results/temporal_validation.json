@@ -1,0 +1,20 @@
+{
+  "Mumbai": {
+    "urban_2019_km2": 1161.2,
+    "urban_2023_km2": 1451.1,
+    "change_km2": 289.9,
+    "pct_change": 24.97
+  },
+  "Delhi_NCR": {
+    "urban_2019_km2": 2912.9,
+    "urban_2023_km2": 2920.1,
+    "change_km2": 7.2,
+    "pct_change": 0.25
+  },
+  "Bangalore": {
+    "urban_2019_km2": 1080.5,
+    "urban_2023_km2": 1080.5,
+    "change_km2": 0.0,
+    "pct_change": 0.0
+  }
+}

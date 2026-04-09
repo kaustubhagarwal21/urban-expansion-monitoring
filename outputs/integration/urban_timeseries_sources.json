@@ -1,0 +1,128 @@
+{
+  "Mumbai": {
+    "1990": {
+      "LS": {
+        "urban_fraction_mean": 0.9230769230769231,
+        "n_observations": 1
+      }
+    },
+    "2000": {
+      "LS": {
+        "urban_fraction_mean": 0.9423076923076923,
+        "n_observations": 1
+      }
+    },
+    "2010": {
+      "LS": {
+        "urban_fraction_mean": 0.8076923076923077,
+        "n_observations": 1
+      }
+    },
+    "2019": {
+      "S2": {
+        "urban_fraction_mean": 0.7386587771203156,
+        "n_observations": 1
+      }
+    },
+    "2021": {
+      "S2": {
+        "urban_fraction_mean": 0.7268244575936884,
+        "n_observations": 1
+      }
+    },
+    "2023": {
+      "LS": {
+        "urban_fraction_mean": 0.9230769230769231,
+        "n_observations": 1
+      },
+      "S2": {
+        "urban_fraction_mean": 0.7485207100591716,
+        "n_observations": 1
+      }
+    }
+  },
+  "Delhi_NCR": {
+    "1990": {
+      "LS": {
+        "urban_fraction_mean": 0.6108597285067874,
+        "n_observations": 1
+      }
+    },
+    "2000": {
+      "LS": {
+        "urban_fraction_mean": 1.0,
+        "n_observations": 1
+      }
+    },
+    "2010": {
+      "LS": {
+        "urban_fraction_mean": 1.0,
+        "n_observations": 1
+      }
+    },
+    "2019": {
+      "S2": {
+        "urban_fraction_mean": 0.997534516765286,
+        "n_observations": 1
+      }
+    },
+    "2021": {
+      "S2": {
+        "urban_fraction_mean": 0.9995069033530573,
+        "n_observations": 1
+      }
+    },
+    "2023": {
+      "LS": {
+        "urban_fraction_mean": 1.0,
+        "n_observations": 1
+      },
+      "S2": {
+        "urban_fraction_mean": 0.9960552268244576,
+        "n_observations": 1
+      }
+    }
+  },
+  "Bangalore": {
+    "1990": {
+      "LS": {
+        "urban_fraction_mean": 1.0,
+        "n_observations": 1
+      }
+    },
+    "2005": {
+      "LS": {
+        "urban_fraction_mean": 1.0,
+        "n_observations": 1
+      }
+    },
+    "2010": {
+      "LS": {
+        "urban_fraction_mean": 1.0,
+        "n_observations": 1
+      }
+    },
+    "2019": {
+      "S2": {
+        "urban_fraction_mean": 1.0,
+        "n_observations": 1
+      }
+    },
+    "2021": {
+      "S2": {
+        "urban_fraction_mean": 0.9985207100591716,
+        "n_observations": 1
+      }
+    },
+    "2023": {
+      "LS": {
+        "urban_fraction_mean": 1.0,
+        "n_observations": 1
+      },
+      "S2": {
+        "urban_fraction_mean": 1.0,
+        "n_observations": 1
+      }
+    }
+  }
+}

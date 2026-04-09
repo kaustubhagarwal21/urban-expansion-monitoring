@@ -1,0 +1,17 @@
+{
+  "backbone": "swin_tiny",
+  "seed": 123,
+  "oa": 0.902676399026764,
+  "precision": 0.9272686156513437,
+  "recall": 0.902676399026764,
+  "f1": 0.9078649676811564,
+  "miou": 0.8041982985882937,
+  "training_time_min": 8.65,
+  "cities": [
+    "Mumbai",
+    "Delhi_NCR",
+    "Bangalore"
+  ],
+  "dataset": "indian_cities_locked",
+  "checkpoint": "C:\\Users\\KAUSTUBH\\Desktop\\AISD PROJECT\\outputs\\models\\swin_tiny_seed123.pth"
+}

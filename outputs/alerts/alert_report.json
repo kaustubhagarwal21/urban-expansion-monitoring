@@ -1,0 +1,82 @@
+{
+  "report_id": "RPT-20260404-171711",
+  "generated_at": "2026-04-04T17:17:11.780823",
+  "total_alerts": 55,
+  "escalated_count": 4,
+  "by_severity": {
+    "LOW": 21,
+    "MEDIUM": 2,
+    "HIGH": 28,
+    "CRITICAL": 4
+  },
+  "by_city": {
+    "Mumbai": {
+      "total": 12,
+      "critical": 2,
+      "high": 7,
+      "protected_zone": 1
+    },
+    "Delhi_NCR": {
+      "total": 6,
+      "critical": 0,
+      "high": 3,
+      "protected_zone": 0
+    },
+    "Bangalore": {
+      "total": 7,
+      "critical": 0,
+      "high": 3,
+      "protected_zone": 3
+    },
+    "Hyderabad": {
+      "total": 9,
+      "critical": 0,
+      "high": 5,
+      "protected_zone": 2
+    },
+    "Chennai": {
+      "total": 8,
+      "critical": 2,
+      "high": 4,
+      "protected_zone": 2
+    },
+    "Pune": {
+      "total": 7,
+      "critical": 0,
+      "high": 2,
+      "protected_zone": 3
+    },
+    "Ahmedabad": {
+      "total": 6,
+      "critical": 0,
+      "high": 4,
+      "protected_zone": 0
+    }
+  },
+  "by_alert_type": {
+    "UNAUTHORIZED_CONSTRUCTION": 22,
+    "CRZ_VIOLATION": 3,
+    "LAKE_ENCROACHMENT": 27,
+    "FLOODPLAIN_ENCROACHMENT": 2,
+    "RAPID_DENSIFICATION": 1
+  },
+  "by_zone_type": {
+    "WETLAND": 2,
+    "CRZ_II": 1,
+    "RIVER_FLOODPLAIN": 2,
+    "GREEN_BELT": 4,
+    "FOREST_RESERVE": 1,
+    "LAKE_BUFFER": 1
+  },
+  "protected_zone_violations": 11,
+  "regulatory_actions_required": [
+    {
+      "alert_id": "ALERT-0007",
+      "city": "Chennai",
+      "zone": "Adyar/Cooum river floodplain",
+      "authority": "National Green Tribunal / State Irrigation Dept",
+      "response_deadline_hours": 12,
+      "penalty": "NGT-ordered demolition"
+    }
+  ]
+}

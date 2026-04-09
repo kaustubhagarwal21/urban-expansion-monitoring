@@ -1,0 +1,156 @@
+{
+  "backbone": "resnet50",
+  "selected_files": [
+    {
+      "city": "Mumbai",
+      "source": "S2",
+      "year": "2019",
+      "season": "pre_monsoon",
+      "file": "S2_Mumbai_2019_pre_monsoon.tif"
+    },
+    {
+      "city": "Mumbai",
+      "source": "S2",
+      "year": "2021",
+      "season": "pre_monsoon",
+      "file": "S2_Mumbai_2021_pre_monsoon.tif"
+    },
+    {
+      "city": "Mumbai",
+      "source": "S2",
+      "year": "2023",
+      "season": "pre_monsoon",
+      "file": "S2_Mumbai_2023_pre_monsoon.tif"
+    },
+    {
+      "city": "Delhi_NCR",
+      "source": "S2",
+      "year": "2019",
+      "season": "pre_monsoon",
+      "file": "S2_Delhi_NCR_2019_pre_monsoon.tif"
+    },
+    {
+      "city": "Delhi_NCR",
+      "source": "S2",
+      "year": "2021",
+      "season": "pre_monsoon",
+      "file": "S2_Delhi_NCR_2021_pre_monsoon.tif"
+    },
+    {
+      "city": "Delhi_NCR",
+      "source": "S2",
+      "year": "2023",
+      "season": "pre_monsoon",
+      "file": "S2_Delhi_NCR_2023_pre_monsoon.tif"
+    },
+    {
+      "city": "Bangalore",
+      "source": "S2",
+      "year": "2019",
+      "season": "pre_monsoon",
+      "file": "S2_Bangalore_2019_pre_monsoon.tif"
+    },
+    {
+      "city": "Bangalore",
+      "source": "S2",
+      "year": "2021",
+      "season": "pre_monsoon",
+      "file": "S2_Bangalore_2021_pre_monsoon.tif"
+    },
+    {
+      "city": "Bangalore",
+      "source": "S2",
+      "year": "2023",
+      "season": "pre_monsoon",
+      "file": "S2_Bangalore_2023_pre_monsoon.tif"
+    },
+    {
+      "city": "Mumbai",
+      "source": "LS",
+      "year": "1990",
+      "season": "pre_monsoon",
+      "file": "LS_Mumbai_1990_pre_monsoon.tif"
+    },
+    {
+      "city": "Mumbai",
+      "source": "LS",
+      "year": "2000",
+      "season": "pre_monsoon",
+      "file": "LS_Mumbai_2000_pre_monsoon.tif"
+    },
+    {
+      "city": "Mumbai",
+      "source": "LS",
+      "year": "2010",
+      "season": "pre_monsoon",
+      "file": "LS_Mumbai_2010_pre_monsoon.tif"
+    },
+    {
+      "city": "Mumbai",
+      "source": "LS",
+      "year": "2023",
+      "season": "pre_monsoon",
+      "file": "LS_Mumbai_2023_pre_monsoon.tif"
+    },
+    {
+      "city": "Delhi_NCR",
+      "source": "LS",
+      "year": "1990",
+      "season": "pre_monsoon",
+      "file": "LS_Delhi_NCR_1990_pre_monsoon.tif"
+    },
+    {
+      "city": "Delhi_NCR",
+      "source": "LS",
+      "year": "2000",
+      "season": "pre_monsoon",
+      "file": "LS_Delhi_NCR_2000_pre_monsoon.tif"
+    },
+    {
+      "city": "Delhi_NCR",
+      "source": "LS",
+      "year": "2010",
+      "season": "pre_monsoon",
+      "file": "LS_Delhi_NCR_2010_pre_monsoon.tif"
+    },
+    {
+      "city": "Delhi_NCR",
+      "source": "LS",
+      "year": "2023",
+      "season": "pre_monsoon",
+      "file": "LS_Delhi_NCR_2023_pre_monsoon.tif"
+    },
+    {
+      "city": "Bangalore",
+      "source": "LS",
+      "year": "1990",
+      "season": "pre_monsoon",
+      "file": "LS_Bangalore_1990_pre_monsoon.tif"
+    },
+    {
+      "city": "Bangalore",
+      "source": "LS",
+      "year": "2005",
+      "season": "pre_monsoon",
+      "file": "LS_Bangalore_2005_pre_monsoon.tif"
+    },
+    {
+      "city": "Bangalore",
+      "source": "LS",
+      "year": "2010",
+      "season": "pre_monsoon",
+      "file": "LS_Bangalore_2010_pre_monsoon.tif"
+    },
+    {
+      "city": "Bangalore",
+      "source": "LS",
+      "year": "2023",
+      "season": "pre_monsoon",
+      "file": "LS_Bangalore_2023_pre_monsoon.tif"
+    }
+  ],
+  "source_counts": {
+    "S2": 9,
+    "LS": 12
+  }
+}

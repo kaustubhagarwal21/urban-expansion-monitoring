@@ -1,0 +1,90 @@
+{
+  "seeds": [
+    42,
+    123,
+    7
+  ],
+  "per_seed": {
+    "seed_42": {
+      "svm_improved": {
+        "oa": 94.51,
+        "f1": 0.9227,
+        "best_params": {
+          "svm__C": "100",
+          "svm__gamma": "scale",
+          "svm__kernel": "rbf"
+        },
+        "pca_components": 13,
+        "time_sec": 2.0
+      },
+      "rf_improved": {
+        "oa": 92.67,
+        "f1": 0.8939,
+        "time_sec": 4.0
+      }
+    },
+    "seed_123": {
+      "svm_improved": {
+        "oa": 91.21,
+        "f1": 0.8815,
+        "best_params": {
+          "svm__C": "100",
+          "svm__gamma": "0.01",
+          "svm__kernel": "rbf"
+        },
+        "pca_components": 13,
+        "time_sec": 1.8
+      },
+      "rf_improved": {
+        "oa": 89.56,
+        "f1": 0.852,
+        "time_sec": 3.9
+      }
+    },
+    "seed_7": {
+      "svm_improved": {
+        "oa": 91.94,
+        "f1": 0.8913,
+        "best_params": {
+          "svm__C": "10",
+          "svm__gamma": "auto",
+          "svm__kernel": "rbf"
+        },
+        "pca_components": 13,
+        "time_sec": 1.8
+      },
+      "rf_improved": {
+        "oa": 89.74,
+        "f1": 0.8664,
+        "time_sec": 3.7
+      }
+    }
+  },
+  "summary": {
+    "svm_improved": {
+      "oa_mean": 92.55,
+      "oa_std": 1.42,
+      "f1_mean": 0.8985,
+      "f1_std": 0.0176,
+      "per_seed_oa": {
+        "42": 94.51,
+        "123": 91.21,
+        "7": 91.94
+      }
+    },
+    "rf_improved": {
+      "oa_mean": 90.66,
+      "oa_std": 1.43,
+      "f1_mean": 0.8708,
+      "f1_std": 0.0174,
+      "per_seed_oa": {
+        "42": 92.67,
+        "123": 89.56,
+        "7": 89.74
+      }
+    }
+  },
+  "published_svm_chamoli2024": 91.01,
+  "our_dl_best_resnet50": 97.5,
+  "beaten_published": true
+}

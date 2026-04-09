@@ -1,0 +1,13 @@
+{
+  "dataset": "LEVIR-CD",
+  "backbone": "efficientnet_b0",
+  "epochs": 10,
+  "training_time_min": 6.77,
+  "oa": 0.9453125,
+  "precision": 0.953919314381271,
+  "recall": 0.9453125,
+  "f1": 0.9485270106363127,
+  "miou": 0.7375,
+  "report": "              precision    recall  f1-score   support\n\n    NoChange       0.62      0.80      0.70        10\n      Change       0.98      0.96      0.97       118\n\n    accuracy                           0.95       128\n   macro avg       0.80      0.88      0.83       128\nweighted avg       0.95      0.95      0.95       128\n",
+  "model_path": "C:\\Users\\KAUSTUBH\\Desktop\\AISD PROJECT\\outputs\\research_results\\phase4_levir_siamese_efficientnet_b0.pth"
+}

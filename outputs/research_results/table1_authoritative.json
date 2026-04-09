@@ -1,0 +1,132 @@
+{
+  "resnet50": {
+    "oa_mean": 0.9752,
+    "oa_std": 0.0021,
+    "f1_mean": 0.9756,
+    "f1_std": 0.002,
+    "miou_mean": 0.939,
+    "miou_std": 0.005,
+    "seeds": [
+      42,
+      123,
+      7
+    ],
+    "raw_oa": [
+      0.9781,
+      0.9732,
+      0.9744
+    ]
+  },
+  "efficientnet_b0": {
+    "oa_mean": 0.9335,
+    "oa_std": 0.023,
+    "f1_mean": 0.9362,
+    "f1_std": 0.0215,
+    "miou_mean": 0.8571,
+    "miou_std": 0.0444,
+    "seeds": [
+      42,
+      123,
+      7
+    ],
+    "raw_oa": [
+      0.9294,
+      0.9075,
+      0.9634
+    ]
+  },
+  "swin_tiny": {
+    "oa_mean": 0.9357,
+    "oa_std": 0.0256,
+    "f1_mean": 0.9387,
+    "f1_std": 0.0239,
+    "miou_mean": 0.8618,
+    "miou_std": 0.0461,
+    "seeds": [
+      42,
+      123,
+      7
+    ],
+    "raw_oa": [
+      0.9392,
+      0.9027,
+      0.9652
+    ]
+  },
+  "mobilenet_v3_small": {
+    "oa_mean": 0.9154,
+    "oa_std": 0.0157,
+    "f1_mean": 0.9197,
+    "f1_std": 0.0144,
+    "miou_mean": 0.8227,
+    "miou_std": 0.0275,
+    "seeds": [
+      42,
+      123,
+      7
+    ],
+    "raw_oa": [
+      0.8978,
+      0.9124,
+      0.9359
+    ]
+  },
+  "SVM": {
+    "oa_mean": 0.8921,
+    "oa_std": 0.0041,
+    "f1_mean": 0.8898,
+    "f1_std": 0.0051,
+    "miou_mean": 0.763,
+    "miou_std": 0.0086,
+    "seeds": [
+      42,
+      123,
+      7
+    ],
+    "raw_oa": [
+      0.8978,
+      0.8905,
+      0.8881
+    ]
+  },
+  "SVM_improved": {
+    "oa_mean": 0.9255,
+    "oa_std": 0.0142,
+    "f1_mean": 0.8985,
+    "f1_std": 0.0176,
+    "miou_mean": null,
+    "miou_std": null,
+    "seeds": [42, 123, 7],
+    "raw_oa": [0.9451, 0.9121, 0.9194],
+    "note": "SVM + spectral indices (NDVI/NDBI/NDWI/SAVI/BSI) + texture + StandardScaler + PCA + grid search (C=100, gamma=scale, RBF)"
+  },
+  "RandomForest": {
+    "oa_mean": 0.8816,
+    "oa_std": 0.0165,
+    "f1_mean": 0.8747,
+    "f1_std": 0.0173,
+    "miou_mean": 0.7332,
+    "miou_std": 0.0284,
+    "seeds": [
+      42,
+      123,
+      7
+    ],
+    "raw_oa": [
+      0.8978,
+      0.8881,
+      0.8589
+    ]
+  },
+  "RF_improved": {
+    "oa_mean": 0.9066,
+    "oa_std": 0.0143,
+    "f1_mean": 0.8708,
+    "f1_std": 0.0174,
+    "miou_mean": null,
+    "miou_std": null,
+    "seeds": [42, 123, 7],
+    "raw_oa": [0.9267, 0.8956, 0.8974],
+    "note": "RF (500 trees) + spectral indices + StandardScaler"
+  }
+}

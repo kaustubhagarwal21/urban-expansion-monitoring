@@ -1,0 +1,191 @@
+{
+  "Mumbai": {
+    "1990": {
+      "urban_fraction": 0.9230769230769231,
+      "urban_area_km2": 1451.0805535983852,
+      "total_area_km2": 1572.0039330649172,
+      "n_observations": 1,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS"
+      ]
+    },
+    "2000": {
+      "urban_fraction": 0.9423076923076923,
+      "urban_area_km2": 1481.311398465018,
+      "total_area_km2": 1572.0039330649172,
+      "n_observations": 1,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS"
+      ]
+    },
+    "2010": {
+      "urban_fraction": 0.8076923076923077,
+      "urban_area_km2": 1269.695484398587,
+      "total_area_km2": 1572.0039330649172,
+      "n_observations": 1,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS"
+      ]
+    },
+    "2019": {
+      "urban_fraction": 0.7386587771203156,
+      "urban_area_km2": 1161.1745028260582,
+      "total_area_km2": 1572.0039330649172,
+      "n_observations": 1,
+      "selected_source": "S2",
+      "available_sources": [
+        "S2"
+      ]
+    },
+    "2021": {
+      "urban_fraction": 0.7268244575936884,
+      "urban_area_km2": 1142.5709059850533,
+      "total_area_km2": 1572.0039330649172,
+      "n_observations": 1,
+      "selected_source": "S2",
+      "available_sources": [
+        "S2"
+      ]
+    },
+    "2023": {
+      "urban_fraction": 0.9230769230769231,
+      "urban_area_km2": 1451.0805535983852,
+      "total_area_km2": 1572.0039330649172,
+      "n_observations": 2,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS",
+        "S2"
+      ]
+    }
+  },
+  "Delhi_NCR": {
+    "1990": {
+      "urban_fraction": 0.6108597285067874,
+      "urban_area_km2": 1783.7498135138326,
+      "total_area_km2": 2920.0645095300515,
+      "n_observations": 1,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS"
+      ]
+    },
+    "2000": {
+      "urban_fraction": 1.0,
+      "urban_area_km2": 2920.0645095300515,
+      "total_area_km2": 2920.0645095300515,
+      "n_observations": 1,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS"
+      ]
+    },
+    "2010": {
+      "urban_fraction": 1.0,
+      "urban_area_km2": 2920.0645095300515,
+      "total_area_km2": 2920.0645095300515,
+      "n_observations": 1,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS"
+      ]
+    },
+    "2019": {
+      "urban_fraction": 0.997534516765286,
+      "urban_area_km2": 2912.865139437522,
+      "total_area_km2": 2920.0645095300515,
+      "n_observations": 1,
+      "selected_source": "S2",
+      "available_sources": [
+        "S2"
+      ]
+    },
+    "2021": {
+      "urban_fraction": 0.9995069033530573,
+      "urban_area_km2": 2918.624635511546,
+      "total_area_km2": 2920.0645095300515,
+      "n_observations": 1,
+      "selected_source": "S2",
+      "available_sources": [
+        "S2"
+      ]
+    },
+    "2023": {
+      "urban_fraction": 1.0,
+      "urban_area_km2": 2920.0645095300515,
+      "total_area_km2": 2920.0645095300515,
+      "n_observations": 2,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS",
+        "S2"
+      ]
+    }
+  },
+  "Bangalore": {
+    "1990": {
+      "urban_fraction": 1.0,
+      "urban_area_km2": 1080.4692211396919,
+      "total_area_km2": 1080.4692211396919,
+      "n_observations": 1,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS"
+      ]
+    },
+    "2005": {
+      "urban_fraction": 1.0,
+      "urban_area_km2": 1080.4692211396919,
+      "total_area_km2": 1080.4692211396919,
+      "n_observations": 1,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS"
+      ]
+    },
+    "2010": {
+      "urban_fraction": 1.0,
+      "urban_area_km2": 1080.4692211396919,
+      "total_area_km2": 1080.4692211396919,
+      "n_observations": 1,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS"
+      ]
+    },
+    "2019": {
+      "urban_fraction": 1.0,
+      "urban_area_km2": 1080.4692211396919,
+      "total_area_km2": 1080.4692211396919,
+      "n_observations": 1,
+      "selected_source": "S2",
+      "available_sources": [
+        "S2"
+      ]
+    },
+    "2021": {
+      "urban_fraction": 0.9985207100591716,
+      "urban_area_km2": 1078.8708938894852,
+      "total_area_km2": 1080.4692211396919,
+      "n_observations": 1,
+      "selected_source": "S2",
+      "available_sources": [
+        "S2"
+      ]
+    },
+    "2023": {
+      "urban_fraction": 1.0,
+      "urban_area_km2": 1080.4692211396919,
+      "total_area_km2": 1080.4692211396919,
+      "n_observations": 2,
+      "selected_source": "LS",
+      "available_sources": [
+        "LS",
+        "S2"
+      ]
+    }
+  }
+}

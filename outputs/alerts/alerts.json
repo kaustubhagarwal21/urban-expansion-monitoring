@@ -1,0 +1,1124 @@
+[
+  {
+    "id": "ALERT-0001",
+    "timestamp": "2024-01-03T00:00:00",
+    "city": "Chennai",
+    "location": "Grid 0004",
+    "coordinates": {
+      "lat": 13.087041850594069,
+      "lon": 80.29690507072891
+    },
+    "severity": "HIGH",
+    "confidence": "0.998",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0002",
+    "timestamp": "2024-01-07T00:00:00",
+    "city": "Ahmedabad",
+    "location": "Grid 0013",
+    "coordinates": {
+      "lat": 23.12467793215274,
+      "lon": 72.60713817132849
+    },
+    "severity": "HIGH",
+    "confidence": "0.998",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0003",
+    "timestamp": "2024-01-08T00:00:00",
+    "city": "Hyderabad",
+    "location": "Grid 0015",
+    "coordinates": {
+      "lat": 17.478428153498896,
+      "lon": 78.30301261681394
+    },
+    "severity": "HIGH",
+    "confidence": "0.996",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0004",
+    "timestamp": "2024-01-09T00:00:00",
+    "city": "Bangalore",
+    "location": "Grid 0017",
+    "coordinates": {
+      "lat": 12.948326985326473,
+      "lon": 77.65026852052488
+    },
+    "severity": "HIGH",
+    "confidence": "0.531",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": true,
+    "zone_name": "Hesaraghatta Lake wetland",
+    "regulatory_context": {
+      "zone_type": "WETLAND",
+      "zone_description": "Notified wetland under Wetland Rules 2017",
+      "buffer_m": 50,
+      "authority": "State Wetland Authority / National Wetland Authority",
+      "penalty": "Restoration + fine",
+      "response_time_hours": 12
+    },
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0005",
+    "timestamp": "2024-01-10T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0018",
+    "coordinates": {
+      "lat": 19.213147892478492,
+      "lon": 72.90483970682509
+    },
+    "severity": "HIGH",
+    "confidence": "0.990",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": true,
+    "zone_name": "CRZ coastal belt",
+    "regulatory_context": {
+      "zone_type": "CRZ_II",
+      "zone_description": "Developed urban areas within CRZ limits",
+      "buffer_m": 200,
+      "authority": "State CZMA",
+      "penalty": "Regularization or demolition",
+      "response_time_hours": 24
+    },
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0006",
+    "timestamp": "2024-01-14T00:00:00",
+    "city": "Delhi_NCR",
+    "location": "Grid 0026",
+    "coordinates": {
+      "lat": 28.79038591139689,
+      "lon": 76.94206610366395
+    },
+    "severity": "HIGH",
+    "confidence": "0.993",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0007",
+    "timestamp": "2024-01-15T00:00:00",
+    "city": "Chennai",
+    "location": "Grid 0028",
+    "coordinates": {
+      "lat": 13.14324653394638,
+      "lon": 80.27533652151213
+    },
+    "severity": "CRITICAL",
+    "confidence": "0.989",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": true,
+    "zone_name": "Adyar/Cooum river floodplain",
+    "regulatory_context": {
+      "zone_type": "RIVER_FLOODPLAIN",
+      "zone_description": "River floodplain / riverbed encroachment",
+      "buffer_m": 300,
+      "authority": "National Green Tribunal / State Irrigation Dept",
+      "penalty": "NGT-ordered demolition",
+      "response_time_hours": 12
+    },
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0008",
+    "timestamp": "2024-01-28T00:00:00",
+    "city": "Chennai",
+    "location": "Grid 0054",
+    "coordinates": {
+      "lat": 13.019010402488695,
+      "lon": 80.17182357578436
+    },
+    "severity": "LOW",
+    "confidence": "0.994",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0009",
+    "timestamp": "2024-02-10T00:00:00",
+    "city": "Ahmedabad",
+    "location": "Grid 0080",
+    "coordinates": {
+      "lat": 23.05996159839909,
+      "lon": 72.51175472981875
+    },
+    "severity": "HIGH",
+    "confidence": "0.995",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0010",
+    "timestamp": "2024-02-13T00:00:00",
+    "city": "Delhi_NCR",
+    "location": "Grid 0087",
+    "coordinates": {
+      "lat": 28.78800687735216,
+      "lon": 76.91452146370429
+    },
+    "severity": "HIGH",
+    "confidence": "0.997",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0011",
+    "timestamp": "2024-02-15T00:00:00",
+    "city": "Ahmedabad",
+    "location": "Grid 0090",
+    "coordinates": {
+      "lat": 23.027120388855174,
+      "lon": 72.69771785747646
+    },
+    "severity": "LOW",
+    "confidence": "0.998",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0012",
+    "timestamp": "2024-02-20T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0101",
+    "coordinates": {
+      "lat": 19.13326818120116,
+      "lon": 72.9277637655734
+    },
+    "severity": "CRITICAL",
+    "confidence": "0.991",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0013",
+    "timestamp": "2024-02-25T00:00:00",
+    "city": "Hyderabad",
+    "location": "Grid 0111",
+    "coordinates": {
+      "lat": 17.48482154896718,
+      "lon": 78.33599582200796
+    },
+    "severity": "HIGH",
+    "confidence": "0.996",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": true,
+    "zone_name": "ORR green belt",
+    "regulatory_context": {
+      "zone_type": "GREEN_BELT",
+      "zone_description": "Municipal green belt / agricultural zone",
+      "buffer_m": 0,
+      "authority": "Municipal Corporation / Town Planning Dept",
+      "penalty": "Regularization or demolition",
+      "response_time_hours": 48
+    },
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0014",
+    "timestamp": "2024-02-28T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0117",
+    "coordinates": {
+      "lat": 19.227183587719832,
+      "lon": 72.84074750945626
+    },
+    "severity": "HIGH",
+    "confidence": "0.999",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0015",
+    "timestamp": "2024-03-03T00:00:00",
+    "city": "Chennai",
+    "location": "Grid 0125",
+    "coordinates": {
+      "lat": 13.024737583241604,
+      "lon": 80.24046983558465
+    },
+    "severity": "LOW",
+    "confidence": "0.999",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": true,
+    "zone_name": "Adyar/Cooum river floodplain",
+    "regulatory_context": {
+      "zone_type": "RIVER_FLOODPLAIN",
+      "zone_description": "River floodplain / riverbed encroachment",
+      "buffer_m": 300,
+      "authority": "National Green Tribunal / State Irrigation Dept",
+      "penalty": "NGT-ordered demolition",
+      "response_time_hours": 12
+    },
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0016",
+    "timestamp": "2024-03-04T00:00:00",
+    "city": "Pune",
+    "location": "Grid 0126",
+    "coordinates": {
+      "lat": 18.62734952212309,
+      "lon": 73.93012287130774
+    },
+    "severity": "LOW",
+    "confidence": "0.994",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0017",
+    "timestamp": "2024-03-05T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0128",
+    "coordinates": {
+      "lat": 18.990623418095005,
+      "lon": 73.03413278795826
+    },
+    "severity": "HIGH",
+    "confidence": "0.998",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0018",
+    "timestamp": "2024-03-05T00:00:00",
+    "city": "Pune",
+    "location": "Grid 0129",
+    "coordinates": {
+      "lat": 18.510169880036713,
+      "lon": 73.83851566455165
+    },
+    "severity": "LOW",
+    "confidence": "0.997",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": true,
+    "zone_name": "Pune cantonment green belt",
+    "regulatory_context": {
+      "zone_type": "GREEN_BELT",
+      "zone_description": "Municipal green belt / agricultural zone",
+      "buffer_m": 0,
+      "authority": "Municipal Corporation / Town Planning Dept",
+      "penalty": "Regularization or demolition",
+      "response_time_hours": 48
+    },
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0019",
+    "timestamp": "2024-03-10T00:00:00",
+    "city": "Chennai",
+    "location": "Grid 0138",
+    "coordinates": {
+      "lat": 12.95128877998095,
+      "lon": 80.18131848693946
+    },
+    "severity": "HIGH",
+    "confidence": "0.995",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0020",
+    "timestamp": "2024-03-11T00:00:00",
+    "city": "Pune",
+    "location": "Grid 0140",
+    "coordinates": {
+      "lat": 18.63461747509425,
+      "lon": 73.83275487611849
+    },
+    "severity": "HIGH",
+    "confidence": "0.994",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": true,
+    "zone_name": "Sinhagad Fort protected area",
+    "regulatory_context": {
+      "zone_type": "FOREST_RESERVE",
+      "zone_description": "Reserved Forest under Forest Conservation Act 1980",
+      "buffer_m": 100,
+      "authority": "MoEFCC / State Forest Department",
+      "penalty": "Criminal prosecution + restoration",
+      "response_time_hours": 12
+    },
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0021",
+    "timestamp": "2024-03-17T00:00:00",
+    "city": "Pune",
+    "location": "Grid 0152",
+    "coordinates": {
+      "lat": 18.542605582339277,
+      "lon": 73.7506781172738
+    },
+    "severity": "LOW",
+    "confidence": "0.996",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": true,
+    "zone_name": "Pune cantonment green belt",
+    "regulatory_context": {
+      "zone_type": "GREEN_BELT",
+      "zone_description": "Municipal green belt / agricultural zone",
+      "buffer_m": 0,
+      "authority": "Municipal Corporation / Town Planning Dept",
+      "penalty": "Regularization or demolition",
+      "response_time_hours": 48
+    },
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0022",
+    "timestamp": "2024-03-18T00:00:00",
+    "city": "Hyderabad",
+    "location": "Grid 0154",
+    "coordinates": {
+      "lat": 17.32067524732435,
+      "lon": 78.42345764784403
+    },
+    "severity": "HIGH",
+    "confidence": "0.995",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0023",
+    "timestamp": "2024-03-22T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0162",
+    "coordinates": {
+      "lat": 19.010253285756985,
+      "lon": 72.90721438425389
+    },
+    "severity": "LOW",
+    "confidence": "0.997",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0024",
+    "timestamp": "2024-03-28T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0174",
+    "coordinates": {
+      "lat": 19.15909761488952,
+      "lon": 73.0397741257108
+    },
+    "severity": "HIGH",
+    "confidence": "0.988",
+    "alert_type": "CRZ_VIOLATION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0025",
+    "timestamp": "2024-04-02T00:00:00",
+    "city": "Ahmedabad",
+    "location": "Grid 0184",
+    "coordinates": {
+      "lat": 22.992664151157594,
+      "lon": 72.57450589796993
+    },
+    "severity": "LOW",
+    "confidence": "0.995",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0026",
+    "timestamp": "2024-04-03T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0187",
+    "coordinates": {
+      "lat": 18.865098885406745,
+      "lon": 72.88075032112994
+    },
+    "severity": "HIGH",
+    "confidence": "0.988",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0027",
+    "timestamp": "2024-04-04T00:00:00",
+    "city": "Bangalore",
+    "location": "Grid 0189",
+    "coordinates": {
+      "lat": 12.952034231152174,
+      "lon": 77.51162711256897
+    },
+    "severity": "HIGH",
+    "confidence": "0.985",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0028",
+    "timestamp": "2024-04-05T00:00:00",
+    "city": "Pune",
+    "location": "Grid 0190",
+    "coordinates": {
+      "lat": 18.460162717316464,
+      "lon": 73.90210922818528
+    },
+    "severity": "HIGH",
+    "confidence": "0.944",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0029",
+    "timestamp": "2024-04-06T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0192",
+    "coordinates": {
+      "lat": 19.09209965204479,
+      "lon": 72.97138932278952
+    },
+    "severity": "HIGH",
+    "confidence": "0.998",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0030",
+    "timestamp": "2024-04-06T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0193",
+    "coordinates": {
+      "lat": 19.028922843864017,
+      "lon": 72.91177657358358
+    },
+    "severity": "HIGH",
+    "confidence": "0.986",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0031",
+    "timestamp": "2024-04-08T00:00:00",
+    "city": "Bangalore",
+    "location": "Grid 0196",
+    "coordinates": {
+      "lat": 13.149716453935213,
+      "lon": 77.73687836604871
+    },
+    "severity": "HIGH",
+    "confidence": "0.966",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0032",
+    "timestamp": "2024-04-09T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0199",
+    "coordinates": {
+      "lat": 19.229751231616614,
+      "lon": 72.75428599616254
+    },
+    "severity": "LOW",
+    "confidence": "0.997",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0033",
+    "timestamp": "2024-04-12T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0204",
+    "coordinates": {
+      "lat": 19.2386502784214,
+      "lon": 72.98221057012071
+    },
+    "severity": "LOW",
+    "confidence": "0.999",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0034",
+    "timestamp": "2024-04-14T00:00:00",
+    "city": "Bangalore",
+    "location": "Grid 0208",
+    "coordinates": {
+      "lat": 12.89487545851927,
+      "lon": 77.62029659992132
+    },
+    "severity": "LOW",
+    "confidence": "0.999",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": true,
+    "zone_name": "Hesaraghatta Lake wetland",
+    "regulatory_context": {
+      "zone_type": "WETLAND",
+      "zone_description": "Notified wetland under Wetland Rules 2017",
+      "buffer_m": 50,
+      "authority": "State Wetland Authority / National Wetland Authority",
+      "penalty": "Restoration + fine",
+      "response_time_hours": 12
+    },
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0035",
+    "timestamp": "2024-04-15T00:00:00",
+    "city": "Chennai",
+    "location": "Grid 0210",
+    "coordinates": {
+      "lat": 12.951776399744386,
+      "lon": 80.18411230746733
+    },
+    "severity": "HIGH",
+    "confidence": "0.996",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0036",
+    "timestamp": "2024-04-16T00:00:00",
+    "city": "Chennai",
+    "location": "Grid 0213",
+    "coordinates": {
+      "lat": 13.154106790513042,
+      "lon": 80.24581827960614
+    },
+    "severity": "CRITICAL",
+    "confidence": "0.960",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0037",
+    "timestamp": "2024-04-17T00:00:00",
+    "city": "Delhi_NCR",
+    "location": "Grid 0215",
+    "coordinates": {
+      "lat": 28.53635554718011,
+      "lon": 77.1766255940663
+    },
+    "severity": "LOW",
+    "confidence": "0.999",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0038",
+    "timestamp": "2024-04-19T00:00:00",
+    "city": "Hyderabad",
+    "location": "Grid 0218",
+    "coordinates": {
+      "lat": 17.52633363900646,
+      "lon": 78.43008161280062
+    },
+    "severity": "HIGH",
+    "confidence": "0.983",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": true,
+    "zone_name": "Hussain Sagar buffer",
+    "regulatory_context": {
+      "zone_type": "LAKE_BUFFER",
+      "zone_description": "Lake / tank buffer zone (75m from boundary)",
+      "buffer_m": 75,
+      "authority": "Lake Development Authority / Municipal Corporation",
+      "penalty": "Demolition per court order",
+      "response_time_hours": 24
+    },
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0039",
+    "timestamp": "2024-04-21T00:00:00",
+    "city": "Delhi_NCR",
+    "location": "Grid 0223",
+    "coordinates": {
+      "lat": 28.53382347225063,
+      "lon": 77.11562162972963
+    },
+    "severity": "LOW",
+    "confidence": "0.997",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0040",
+    "timestamp": "2024-04-23T00:00:00",
+    "city": "Ahmedabad",
+    "location": "Grid 0226",
+    "coordinates": {
+      "lat": 23.0284074914858,
+      "lon": 72.5306484811182
+    },
+    "severity": "HIGH",
+    "confidence": "0.978",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0041",
+    "timestamp": "2024-04-25T00:00:00",
+    "city": "Bangalore",
+    "location": "Grid 0230",
+    "coordinates": {
+      "lat": 13.120646521587414,
+      "lon": 77.51695206785777
+    },
+    "severity": "LOW",
+    "confidence": "0.993",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": true,
+    "zone_name": "Agricultural green belt (north)",
+    "regulatory_context": {
+      "zone_type": "GREEN_BELT",
+      "zone_description": "Municipal green belt / agricultural zone",
+      "buffer_m": 0,
+      "authority": "Municipal Corporation / Town Planning Dept",
+      "penalty": "Regularization or demolition",
+      "response_time_hours": 48
+    },
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0042",
+    "timestamp": "2024-04-25T00:00:00",
+    "city": "Bangalore",
+    "location": "Grid 0231",
+    "coordinates": {
+      "lat": 12.928158155531344,
+      "lon": 77.71637800061004
+    },
+    "severity": "LOW",
+    "confidence": "0.997",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0043",
+    "timestamp": "2024-04-30T00:00:00",
+    "city": "Ahmedabad",
+    "location": "Grid 0240",
+    "coordinates": {
+      "lat": 23.10798633798086,
+      "lon": 72.51770030600032
+    },
+    "severity": "HIGH",
+    "confidence": "0.999",
+    "alert_type": "FLOODPLAIN_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0044",
+    "timestamp": "2024-05-03T00:00:00",
+    "city": "Delhi_NCR",
+    "location": "Grid 0246",
+    "coordinates": {
+      "lat": 28.662429439012623,
+      "lon": 77.10266309121695
+    },
+    "severity": "MEDIUM",
+    "confidence": "0.991",
+    "alert_type": "FLOODPLAIN_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0045",
+    "timestamp": "2024-05-09T00:00:00",
+    "city": "Pune",
+    "location": "Grid 0258",
+    "coordinates": {
+      "lat": 18.464532567680912,
+      "lon": 73.94826226903747
+    },
+    "severity": "MEDIUM",
+    "confidence": "0.986",
+    "alert_type": "CRZ_VIOLATION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0046",
+    "timestamp": "2024-05-11T00:00:00",
+    "city": "Hyderabad",
+    "location": "Grid 0262",
+    "coordinates": {
+      "lat": 17.49400422802639,
+      "lon": 78.30874203731034
+    },
+    "severity": "LOW",
+    "confidence": "0.995",
+    "alert_type": "RAPID_DENSIFICATION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0047",
+    "timestamp": "2024-05-11T00:00:00",
+    "city": "Chennai",
+    "location": "Grid 0263",
+    "coordinates": {
+      "lat": 13.06157056037719,
+      "lon": 80.21074175547471
+    },
+    "severity": "HIGH",
+    "confidence": "0.995",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0048",
+    "timestamp": "2024-05-12T00:00:00",
+    "city": "Bangalore",
+    "location": "Grid 0264",
+    "coordinates": {
+      "lat": 13.084607927689424,
+      "lon": 77.59738118968521
+    },
+    "severity": "LOW",
+    "confidence": "0.999",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0049",
+    "timestamp": "2024-05-17T00:00:00",
+    "city": "Mumbai",
+    "location": "Grid 0274",
+    "coordinates": {
+      "lat": 18.93242699227486,
+      "lon": 73.02793522799924
+    },
+    "severity": "CRITICAL",
+    "confidence": "0.996",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0050",
+    "timestamp": "2024-05-19T00:00:00",
+    "city": "Hyderabad",
+    "location": "Grid 0278",
+    "coordinates": {
+      "lat": 17.45198704667862,
+      "lon": 78.49567974905571
+    },
+    "severity": "HIGH",
+    "confidence": "0.993",
+    "alert_type": "UNAUTHORIZED_CONSTRUCTION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0051",
+    "timestamp": "2024-05-23T00:00:00",
+    "city": "Delhi_NCR",
+    "location": "Grid 0287",
+    "coordinates": {
+      "lat": 28.803177784201466,
+      "lon": 77.16712611446731
+    },
+    "severity": "HIGH",
+    "confidence": "0.989",
+    "alert_type": "CRZ_VIOLATION",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": true,
+    "requires_site_inspection": true
+  },
+  {
+    "id": "ALERT-0052",
+    "timestamp": "2024-05-24T00:00:00",
+    "city": "Hyderabad",
+    "location": "Grid 0288",
+    "coordinates": {
+      "lat": 17.35339134588299,
+      "lon": 78.30056218823891
+    },
+    "severity": "LOW",
+    "confidence": "0.999",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0053",
+    "timestamp": "2024-05-24T00:00:00",
+    "city": "Hyderabad",
+    "location": "Grid 0289",
+    "coordinates": {
+      "lat": 17.507950148903852,
+      "lon": 78.58481820399705
+    },
+    "severity": "LOW",
+    "confidence": "0.998",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0054",
+    "timestamp": "2024-05-29T00:00:00",
+    "city": "Pune",
+    "location": "Grid 0298",
+    "coordinates": {
+      "lat": 18.500480005942972,
+      "lon": 73.77768954595932
+    },
+    "severity": "LOW",
+    "confidence": "0.996",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  },
+  {
+    "id": "ALERT-0055",
+    "timestamp": "2024-05-29T00:00:00",
+    "city": "Hyderabad",
+    "location": "Grid 0299",
+    "coordinates": {
+      "lat": 17.425517955274305,
+      "lon": 78.51992451819851
+    },
+    "severity": "LOW",
+    "confidence": "0.998",
+    "alert_type": "LAKE_ENCROACHMENT",
+    "in_protected_zone": false,
+    "zone_name": null,
+    "regulatory_context": {},
+    "status": "ACTIVE",
+    "requires_escalation": false,
+    "requires_site_inspection": false
+  }
+]

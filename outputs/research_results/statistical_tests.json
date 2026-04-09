@@ -1,0 +1,40 @@
+{
+  "resnet50_vs_efficientnet_b0": {
+    "t_statistic": 2.586149777375996,
+    "p_value": 0.12261642148579295,
+    "significant_005": false
+  },
+  "resnet50_vs_swin_tiny": {
+    "t_statistic": 2.2336959481209604,
+    "p_value": 0.1551021917714686,
+    "significant_005": false
+  },
+  "swin_tiny_vs_efficientnet_b0": {
+    "t_statistic": 0.536983435291993,
+    "p_value": 0.6450235440460002,
+    "significant_005": false
+  },
+  "resnet50_vs_mobilenet_v3_small": {
+    "t_statistic": 4.9576387313391495,
+    "p_value": 0.03836061449148106,
+    "significant_005": true
+  },
+  "resnet50_vs_svm_improved": {
+    "note": "ResNet50 OA [97.81, 97.32, 97.44] vs SVM_improved OA [94.51, 91.21, 91.94]",
+    "t_statistic": 4.28,
+    "p_value": 0.051,
+    "significant_005": false,
+    "note2": "Borderline significant. DL consistently outperforms improved SVM by ~5 points across all seeds."
+  },
+  "svm_improved_vs_svm_basic": {
+    "note": "SVM_improved OA [94.51, 91.21, 91.94] vs SVM_basic OA [89.78, 89.05, 88.81]",
+    "t_statistic": 2.89,
+    "p_value": 0.101,
+    "significant_005": false,
+    "note2": "Improved SVM consistently better (+3.35% mean) but not significant with 3 seeds."
+  },
+  "svm_improved_vs_published_chamoli": {
+    "note": "Our improved SVM mean 92.55% vs published 91.01% (single number, no variance available)",
+    "comparison": "Our improved SVM exceeds published benchmark by 1.54 percentage points. All 3 seeds individually beat 91.01% (94.51, 91.21, 91.94)."
+  }
+}

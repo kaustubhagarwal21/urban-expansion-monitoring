@@ -1,0 +1,123 @@
+{
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU (8GB VRAM)",
+    "cpu": "Intel Core i7/i9 (Windows 11 Home)",
+    "ram": "16GB+",
+    "total_training_time": "~20 hours across all experiments"
+  },
+  "software": {
+    "python": "3.11",
+    "pytorch": "2.0+",
+    "torchvision": "0.15+",
+    "timm": "0.9+",
+    "scikit-learn": "1.3+",
+    "matplotlib": "3.7+",
+    "seaborn": "0.12+",
+    "rasterio": "1.3+",
+    "earthengine-api": "0.1.370+"
+  },
+  "data_access": {
+    "satellite_data": "Google Earth Engine (GEE), freely accessible with academic registration",
+    "gee_project": "urban-expansion-india",
+    "sentinel2": "Copernicus Sentinel-2 L2A, 10m resolution, accessed via ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')",
+    "sentinel1": "Copernicus Sentinel-1 GRD, 10m resolution, accessed via ee.ImageCollection('COPERNICUS/S1_GRD')",
+    "landsat": "USGS Landsat 5/7/8/9, 30m resolution, harmonized bands",
+    "labels": "ESA WorldCover 2021 (10m, freely available, ee.ImageCollection('ESA/WorldCover/v200'))",
+    "gee_scripts": "Provided in data/gee_download_script.js for exact reproduction of data exports"
+  },
+  "dataset_construction": {
+    "cities": ["Mumbai", "Delhi_NCR", "Bangalore"],
+    "bounding_boxes": {
+      "Mumbai": "[72.75, 18.85, 73.05, 19.30]",
+      "Delhi_NCR": "[76.85, 28.40, 77.45, 28.85]",
+      "Bangalore": "[77.45, 12.85, 77.75, 13.15]"
+    },
+    "total_patches": 2730,
+    "patch_size": "256x256 pixels at 10m resolution (Sentinel-2)",
+    "spectral_bands": "B2 (Blue), B3 (Green), B4 (Red), B8 (NIR), B11 (SWIR1), B12 (SWIR2)",
+    "class_taxonomy": {
+      "Urban (0)": "Built-up areas from WorldCover class 50",
+      "Non-Urban (1)": "All non-built classes (vegetation, water, bare soil)",
+      "Transition (2)": "100m morphological buffer around urban boundaries"
+    },
+    "season": "Pre-monsoon (January-March) for minimum cloud cover",
+    "years_classifier": ["2019", "2021", "2023"],
+    "years_temporal": ["1990", "2000_or_2005", "2010", "2023"]
+  },
+  "training_protocol": {
+    "seeds": [42, 123, 7],
+    "progressive_finetuning": {
+      "stage1": {"name": "frozen", "lr": 0.001, "epochs": 5, "unfreeze": "classifier head only"},
+      "stage2": {"name": "partial", "lr": 0.0001, "epochs": 5, "unfreeze": "last backbone blocks"},
+      "stage3": {"name": "full", "lr": 0.00001, "epochs": 5, "unfreeze": "all parameters"}
+    },
+    "total_epochs": 15,
+    "batch_size": 16,
+    "optimizer": "Adam",
+    "weight_decay": 0.0001,
+    "loss": "0.6 * CrossEntropy + 0.3 * FocalLoss(gamma=2) + 0.1 * DiceLoss",
+    "augmentation": "Random horizontal/vertical flip, rotation, mixup (alpha=0.2)",
+    "train_val_test_split": "68% train / 12% validation / 20% test (stratified by class)",
+    "early_stopping": "Patience=5 epochs on validation F1"
+  },
+  "evaluation_protocol": {
+    "metrics": ["Overall Accuracy (OA)", "Macro F1-Score", "Mean IoU (mIoU)", "Per-class Precision/Recall"],
+    "statistical_validation": "All key experiments repeated with 3 random seeds (42, 123, 7). Results reported as mean +/- std.",
+    "significance_testing": "Paired t-tests at alpha=0.05 across 3-seed OA values for model comparisons",
+    "cross_city": "Leave-One-City-Out (LOCO): train on 2 cities, test on held-out city, 3 folds per seed"
+  },
+  "improved_svm": {
+    "features": "60-dim feature vector: 6 bands x 4 stats (mean, std, p25, p75) + 5 spectral indices (NDVI, NDBI, NDWI, SAVI, BSI) x 4 stats + 6 bands x 2 texture (h_diff, v_diff) + 4 band ratios",
+    "spectral_indices": {
+      "NDVI": "(B8-B4)/(B8+B4)",
+      "NDBI": "(B11-B8)/(B11+B8)",
+      "NDWI": "(B3-B8)/(B3+B8)",
+      "SAVI": "((B8-B4)/(B8+B4+0.5))*1.5",
+      "BSI": "((B11+B4)-(B8+B2))/((B11+B4)+(B8+B2))"
+    },
+    "pipeline": "StandardScaler -> PCA (99% variance, 13 components) -> SVM (RBF)",
+    "grid_search": {"C": [1, 10, 100], "gamma": ["scale", "auto", 0.01], "kernel": ["rbf"], "cv": 3},
+    "best_params_seed42": {"C": 100, "gamma": "scale"},
+    "result": "92.55 +/- 1.42% OA (3 seeds)"
+  },
+  "pillar4_forecasting": {
+    "model": "Bi-LSTM + Multi-Head Attention (2 heads) + MC Dropout",
+    "params": "94K",
+    "hidden_dim": 64,
+    "num_layers": 1,
+    "window_size": 3,
+    "optimizer": "Adam (lr=5e-4, weight_decay=1e-3)",
+    "loss": "Huber loss",
+    "epochs": 50,
+    "augmentation": "3x Gaussian noise copies",
+    "temporal_split": "Train 1990-2015, Val 2016-2019, Test 2020-2023",
+    "uncertainty": "MC Dropout (50 forward passes, 95% CI)",
+    "input_features": "Urban area (sq km), Census population, GSDP, per capita income, Smart City allocations, metro rail length, NH density, SEZ count, FSI green cover, policy events",
+    "result": "Standalone controlled benchmark: R2=0.9564, MAE=119.53 sq km, MAPE=6.66%",
+    "integrated_phase6_override": {
+      "file_inventory": "21 real GeoTIFFs (9 Sentinel-2 + 12 Landsat)",
+      "r2": 0.559,
+      "mae_sq_km": 330.35,
+      "rmse_sq_km": 446.6,
+      "mape_pct": 20.34,
+      "ridge_baseline_r2": 0.6006,
+      "ridge_baseline_mae_sq_km": 322.32,
+      "note": "Harder operational setting using a calibrated temporal generator with real satellite overrides, tight urban-core boxes, and mixed-resolution temporal anchors"
+    }
+  },
+  "pillar5_alerts": {
+    "model": "3-head change detector (change + severity + alert type)",
+    "backbone": "MobileNetV3-Small (3.4M params)",
+    "change_accuracy": "99.33% (standalone detector)",
+    "severity_classes": ["NONE", "LOW", "MEDIUM", "HIGH", "CRITICAL"],
+    "regulatory_zones": "10 types (CRZ-I/II/III, Forest Reserve, Protected Forest, Wetland, Lake Buffer, River Floodplain, Green Belt, Western Ghats ESA)",
+    "named_protected_zones": "30+ across 7 cities",
+    "legal_framework": ["CRZ Notification 2019", "Forest Conservation Act 1980", "Wetland Rules 2017"],
+    "latency": "77.49ms mean per patch in the simulated alert stage of the integrated Phase 6 run",
+    "throughput": "12.9 patches/sec in the simulated alert stage of the integrated Phase 6 run",
+    "full_coverage_7_cities": "90.4 minutes estimated",
+    "end_to_end_phase6_runtime": "26.0 minutes for the 21-file hybrid integration run",
+    "integrated_output": "Forecast-conditioned simulated output: 55 alerts, 4 CRITICAL, 11 protected-zone violations"
+  },
+  "code_availability": "Full source code, GEE download scripts, training scripts, and configuration files will be made available on GitHub upon publication."
+}

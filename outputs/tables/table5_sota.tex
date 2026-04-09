@@ -1,0 +1,34 @@
+\begin{table}[t]
+\centering
+\caption{Comparison with published methods. EuroSAT results are on the standard 10-class RGB benchmark. Indian urban results are on Sentinel-2 urban classification tasks. Our results report mean $\pm$ std over 3 random seeds (42, 123, 7). Note: direct comparison across datasets is indicative, not definitive, as class taxonomies and data difficulty differ.}
+\label{tab:sota}
+\begin{tabular}{llcc}
+\toprule
+Method & Dataset & OA (\%) & Notes \\
+\midrule
+\multicolumn{4}{l}{\textit{EuroSAT Benchmark (10-class, Sentinel-2)}} \\
+\midrule
+ResNet50 \cite{he2016deep} & EuroSAT RGB & 96.78 & Fine-tuned \\
+EfficientNet-B3 \cite{tan2019efficientnet} & EuroSAT RGB & 97.1 & Transfer learning \\
+ViT-Base \cite{dosovitskiy2021image} & EuroSAT RGB & 98.0 & Vision Transformer \\
+Helber et al. \cite{helber2019eurosat} & EuroSAT (all bands) & 98.57 & Original benchmark \\
+Swin-T optimized \cite{swin2024eurosat} & EuroSAT & 99.02 & Optimized Swin Transformer \\
+\midrule
+\multicolumn{4}{l}{\textit{Indian Urban Classification (Sentinel-2)}} \\
+\midrule
+SVM \cite{chamoli2024} & S-2, Uttarakhand & 91.01 & Traditional ML \\
+Random Forest \cite{chamoli2024} & S-2, Uttarakhand & 89.67 & Traditional ML \\
+IRUNet ensemble \cite{katpadi2025} & S-2, Tamil Nadu & 98.21 & Segmentation task \\
+S1+S2 fusion \cite{delhi2022} & S-1+S-2, Delhi & 92.0 & SAR+optical \\
+\midrule
+\multicolumn{4}{l}{\textit{Ours (3-class: Urban/Non-Urban/Transition, 3 Indian metros)}} \\
+\midrule
+\textbf{Ours -- SVM (basic)} & Indian Cities & $89.2 \pm 0.4$ & Raw pixel features \\
+\textbf{Ours -- SVM (improved)} & Indian Cities & $\mathbf{92.6 \pm 1.4}$ & +Spectral indices, PCA, grid search \\
+\textbf{Ours -- MobileNetV3} & Indian Cities & $91.5 \pm 1.6$ & Edge model (184 patch/s, 30.5 MB) \\
+\textbf{Ours -- ResNet50} & Indian Cities & $\mathbf{97.5 \pm 0.2}$ & \textbf{Best accuracy} \\
+\textbf{Ours -- Swin-Tiny} & Indian Cities & $93.6 \pm 2.6$ & Best LOCO (79.1\%) \\
+\textbf{Ours -- Swin-Tiny LOCO} & Cross-city (3 folds) & $\mathbf{79.1 \pm 3.9}$ & \textbf{Novel benchmark} \\
+\bottomrule
+\end{tabular}
+\end{table}

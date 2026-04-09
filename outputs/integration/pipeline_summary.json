@@ -1,0 +1,1095 @@
+{
+  "classification": {
+    "Mumbai": {
+      "S2_2019_pre_monsoon": {
+        "urban_fraction": 0.7386587771203156,
+        "file": "S2_Mumbai_2019_pre_monsoon.tif",
+        "source": "S2",
+        "year": 2019,
+        "season": "pre_monsoon",
+        "time_sec": 33.425968408584595
+      },
+      "S2_2021_pre_monsoon": {
+        "urban_fraction": 0.7268244575936884,
+        "file": "S2_Mumbai_2021_pre_monsoon.tif",
+        "source": "S2",
+        "year": 2021,
+        "season": "pre_monsoon",
+        "time_sec": 61.62486815452576
+      },
+      "S2_2023_pre_monsoon": {
+        "urban_fraction": 0.7485207100591716,
+        "file": "S2_Mumbai_2023_pre_monsoon.tif",
+        "source": "S2",
+        "year": 2023,
+        "season": "pre_monsoon",
+        "time_sec": 66.29077959060669
+      },
+      "LS_1990_pre_monsoon": {
+        "urban_fraction": 0.9230769230769231,
+        "file": "LS_Mumbai_1990_pre_monsoon.tif",
+        "source": "LS",
+        "year": 1990,
+        "season": "pre_monsoon",
+        "time_sec": 11.71159815788269
+      },
+      "LS_2000_pre_monsoon": {
+        "urban_fraction": 0.9423076923076923,
+        "file": "LS_Mumbai_2000_pre_monsoon.tif",
+        "source": "LS",
+        "year": 2000,
+        "season": "pre_monsoon",
+        "time_sec": 14.778754472732544
+      },
+      "LS_2010_pre_monsoon": {
+        "urban_fraction": 0.8076923076923077,
+        "file": "LS_Mumbai_2010_pre_monsoon.tif",
+        "source": "LS",
+        "year": 2010,
+        "season": "pre_monsoon",
+        "time_sec": 7.77490496635437
+      },
+      "LS_2023_pre_monsoon": {
+        "urban_fraction": 0.9230769230769231,
+        "file": "LS_Mumbai_2023_pre_monsoon.tif",
+        "source": "LS",
+        "year": 2023,
+        "season": "pre_monsoon",
+        "time_sec": 12.942737340927124
+      }
+    },
+    "Delhi_NCR": {
+      "S2_2019_pre_monsoon": {
+        "urban_fraction": 0.997534516765286,
+        "file": "S2_Delhi_NCR_2019_pre_monsoon.tif",
+        "source": "S2",
+        "year": 2019,
+        "season": "pre_monsoon",
+        "time_sec": 143.21236872673035
+      },
+      "S2_2021_pre_monsoon": {
+        "urban_fraction": 0.9995069033530573,
+        "file": "S2_Delhi_NCR_2021_pre_monsoon.tif",
+        "source": "S2",
+        "year": 2021,
+        "season": "pre_monsoon",
+        "time_sec": 139.3575689792633
+      },
+      "S2_2023_pre_monsoon": {
+        "urban_fraction": 0.9960552268244576,
+        "file": "S2_Delhi_NCR_2023_pre_monsoon.tif",
+        "source": "S2",
+        "year": 2023,
+        "season": "pre_monsoon",
+        "time_sec": 142.11395287513733
+      },
+      "LS_1990_pre_monsoon": {
+        "urban_fraction": 0.6108597285067874,
+        "file": "LS_Delhi_NCR_1990_pre_monsoon.tif",
+        "source": "LS",
+        "year": 1990,
+        "season": "pre_monsoon",
+        "time_sec": 15.582763433456421
+      },
+      "LS_2000_pre_monsoon": {
+        "urban_fraction": 1.0,
+        "file": "LS_Delhi_NCR_2000_pre_monsoon.tif",
+        "source": "LS",
+        "year": 2000,
+        "season": "pre_monsoon",
+        "time_sec": 24.177716732025146
+      },
+      "LS_2010_pre_monsoon": {
+        "urban_fraction": 1.0,
+        "file": "LS_Delhi_NCR_2010_pre_monsoon.tif",
+        "source": "LS",
+        "year": 2010,
+        "season": "pre_monsoon",
+        "time_sec": 23.974517583847046
+      },
+      "LS_2023_pre_monsoon": {
+        "urban_fraction": 1.0,
+        "file": "LS_Delhi_NCR_2023_pre_monsoon.tif",
+        "source": "LS",
+        "year": 2023,
+        "season": "pre_monsoon",
+        "time_sec": 23.538975477218628
+      }
+    },
+    "Bangalore": {
+      "S2_2019_pre_monsoon": {
+        "urban_fraction": 1.0,
+        "file": "S2_Bangalore_2019_pre_monsoon.tif",
+        "source": "S2",
+        "year": 2019,
+        "season": "pre_monsoon",
+        "time_sec": 33.14211058616638
+      },
+      "S2_2021_pre_monsoon": {
+        "urban_fraction": 0.9985207100591716,
+        "file": "S2_Bangalore_2021_pre_monsoon.tif",
+        "source": "S2",
+        "year": 2021,
+        "season": "pre_monsoon",
+        "time_sec": 30.703027963638306
+      },
+      "S2_2023_pre_monsoon": {
+        "urban_fraction": 1.0,
+        "file": "S2_Bangalore_2023_pre_monsoon.tif",
+        "source": "S2",
+        "year": 2023,
+        "season": "pre_monsoon",
+        "time_sec": 46.14317464828491
+      },
+      "LS_1990_pre_monsoon": {
+        "urban_fraction": 1.0,
+        "file": "LS_Bangalore_1990_pre_monsoon.tif",
+        "source": "LS",
+        "year": 1990,
+        "season": "pre_monsoon",
+        "time_sec": 8.12559199333191
+      },
+      "LS_2005_pre_monsoon": {
+        "urban_fraction": 1.0,
+        "file": "LS_Bangalore_2005_pre_monsoon.tif",
+        "source": "LS",
+        "year": 2005,
+        "season": "pre_monsoon",
+        "time_sec": 9.50661301612854
+      },
+      "LS_2010_pre_monsoon": {
+        "urban_fraction": 1.0,
+        "file": "LS_Bangalore_2010_pre_monsoon.tif",
+        "source": "LS",
+        "year": 2010,
+        "season": "pre_monsoon",
+        "time_sec": 9.88838005065918
+      },
+      "LS_2023_pre_monsoon": {
+        "urban_fraction": 1.0,
+        "file": "LS_Bangalore_2023_pre_monsoon.tif",
+        "source": "LS",
+        "year": 2023,
+        "season": "pre_monsoon",
+        "time_sec": 9.750463962554932
+      }
+    }
+  },
+  "timeseries": {
+    "Mumbai": {
+      "1990": {
+        "urban_fraction": 0.9230769230769231,
+        "urban_area_km2": 1451.0805535983852,
+        "total_area_km2": 1572.0039330649172,
+        "n_observations": 1,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS"
+        ]
+      },
+      "2000": {
+        "urban_fraction": 0.9423076923076923,
+        "urban_area_km2": 1481.311398465018,
+        "total_area_km2": 1572.0039330649172,
+        "n_observations": 1,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS"
+        ]
+      },
+      "2010": {
+        "urban_fraction": 0.8076923076923077,
+        "urban_area_km2": 1269.695484398587,
+        "total_area_km2": 1572.0039330649172,
+        "n_observations": 1,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS"
+        ]
+      },
+      "2019": {
+        "urban_fraction": 0.7386587771203156,
+        "urban_area_km2": 1161.1745028260582,
+        "total_area_km2": 1572.0039330649172,
+        "n_observations": 1,
+        "selected_source": "S2",
+        "available_sources": [
+          "S2"
+        ]
+      },
+      "2021": {
+        "urban_fraction": 0.7268244575936884,
+        "urban_area_km2": 1142.5709059850533,
+        "total_area_km2": 1572.0039330649172,
+        "n_observations": 1,
+        "selected_source": "S2",
+        "available_sources": [
+          "S2"
+        ]
+      },
+      "2023": {
+        "urban_fraction": 0.9230769230769231,
+        "urban_area_km2": 1451.0805535983852,
+        "total_area_km2": 1572.0039330649172,
+        "n_observations": 2,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS",
+          "S2"
+        ]
+      }
+    },
+    "Delhi_NCR": {
+      "1990": {
+        "urban_fraction": 0.6108597285067874,
+        "urban_area_km2": 1783.7498135138326,
+        "total_area_km2": 2920.0645095300515,
+        "n_observations": 1,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS"
+        ]
+      },
+      "2000": {
+        "urban_fraction": 1.0,
+        "urban_area_km2": 2920.0645095300515,
+        "total_area_km2": 2920.0645095300515,
+        "n_observations": 1,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS"
+        ]
+      },
+      "2010": {
+        "urban_fraction": 1.0,
+        "urban_area_km2": 2920.0645095300515,
+        "total_area_km2": 2920.0645095300515,
+        "n_observations": 1,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS"
+        ]
+      },
+      "2019": {
+        "urban_fraction": 0.997534516765286,
+        "urban_area_km2": 2912.865139437522,
+        "total_area_km2": 2920.0645095300515,
+        "n_observations": 1,
+        "selected_source": "S2",
+        "available_sources": [
+          "S2"
+        ]
+      },
+      "2021": {
+        "urban_fraction": 0.9995069033530573,
+        "urban_area_km2": 2918.624635511546,
+        "total_area_km2": 2920.0645095300515,
+        "n_observations": 1,
+        "selected_source": "S2",
+        "available_sources": [
+          "S2"
+        ]
+      },
+      "2023": {
+        "urban_fraction": 1.0,
+        "urban_area_km2": 2920.0645095300515,
+        "total_area_km2": 2920.0645095300515,
+        "n_observations": 2,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS",
+          "S2"
+        ]
+      }
+    },
+    "Bangalore": {
+      "1990": {
+        "urban_fraction": 1.0,
+        "urban_area_km2": 1080.4692211396919,
+        "total_area_km2": 1080.4692211396919,
+        "n_observations": 1,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS"
+        ]
+      },
+      "2005": {
+        "urban_fraction": 1.0,
+        "urban_area_km2": 1080.4692211396919,
+        "total_area_km2": 1080.4692211396919,
+        "n_observations": 1,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS"
+        ]
+      },
+      "2010": {
+        "urban_fraction": 1.0,
+        "urban_area_km2": 1080.4692211396919,
+        "total_area_km2": 1080.4692211396919,
+        "n_observations": 1,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS"
+        ]
+      },
+      "2019": {
+        "urban_fraction": 1.0,
+        "urban_area_km2": 1080.4692211396919,
+        "total_area_km2": 1080.4692211396919,
+        "n_observations": 1,
+        "selected_source": "S2",
+        "available_sources": [
+          "S2"
+        ]
+      },
+      "2021": {
+        "urban_fraction": 0.9985207100591716,
+        "urban_area_km2": 1078.8708938894852,
+        "total_area_km2": 1080.4692211396919,
+        "n_observations": 1,
+        "selected_source": "S2",
+        "available_sources": [
+          "S2"
+        ]
+      },
+      "2023": {
+        "urban_fraction": 1.0,
+        "urban_area_km2": 1080.4692211396919,
+        "total_area_km2": 1080.4692211396919,
+        "n_observations": 2,
+        "selected_source": "LS",
+        "available_sources": [
+          "LS",
+          "S2"
+        ]
+      }
+    }
+  },
+  "prediction": [
+    "UrbanExpansionPredictor(\n  (input_proj): Sequential(\n    (0): Linear(in_features=17, out_features=64, bias=True)\n    (1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)\n    (2): ReLU(inplace=True)\n    (3): Dropout(p=0.15, inplace=False)\n  )\n  (lstm): LSTM(64, 64, batch_first=True, bidirectional=True)\n  (bidir_proj): Linear(in_features=128, out_features=64, bias=True)\n  (attention): TemporalAttention(\n    (attn_layers): ModuleList(\n      (0-1): 2 x Sequential(\n        (0): Linear(in_features=64, out_features=32, bias=True)\n        (1): Tanh()\n        (2): Linear(in_features=32, out_features=1, bias=True)\n      )\n    )\n    (combine): Linear(in_features=128, out_features=64, bias=True)\n  )\n  (layer_norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)\n  (area_head): Sequential(\n    (0): Linear(in_features=64, out_features=32, bias=True)\n    (1): ReLU(inplace=True)\n    (2): Dropout(p=0.15, inplace=False)\n    (3): Linear(in_features=32, out_features=1, bias=True)\n  )\n  (growth_head): Sequential(\n    (0): Linear(in_features=64, out_features=32, bias=True)\n    (1): ReLU(inplace=True)\n    (2): Dropout(p=0.15, inplace=False)\n    (3): Linear(in_features=32, out_features=1, bias=True)\n  )\n  (uncertainty_head): Sequential(\n    (0): Linear(in_features=64, out_features=16, bias=True)\n    (1): ReLU(inplace=True)\n    (2): Linear(in_features=16, out_features=1, bias=True)\n  )\n)",
+    {
+      "train_loss": [
+        0.25564638358650743,
+        0.14585383517154749,
+        0.09669666677929353,
+        0.06335478191173348,
+        0.05908121452830716,
+        0.05535380969568316,
+        0.0467390697565138,
+        0.04674049725999003,
+        0.04278609393006403,
+        0.04460824331881837,
+        0.041557896465803525,
+        0.038166438169607714,
+        0.042197558001131126,
+        0.03678924669791206,
+        0.039866014108000086,
+        0.03620676244666904,
+        0.03478373801162154,
+        0.037443810210063835,
+        0.03586982045800851,
+        0.03128155734289754,
+        0.029426572979360386,
+        0.026917280116374943,
+        0.027133996654340447,
+        0.029417281442053817
+      ],
+      "val_loss": [
+        0.41527053713798523,
+        0.28320661187171936,
+        0.17211377620697021,
+        0.11428322643041611,
+        0.11750577390193939,
+        0.11725970357656479,
+        0.11812984198331833,
+        0.11537939310073853,
+        0.11122339218854904,
+        0.11933418363332748,
+        0.12053488940000534,
+        0.1135219857096672,
+        0.1424553394317627,
+        0.12885601818561554,
+        0.12638868391513824,
+        0.12114971876144409,
+        0.1381092667579651,
+        0.12210433185100555,
+        0.14639165997505188,
+        0.14440040290355682,
+        0.1277582198381424,
+        0.1342822015285492,
+        0.12487610429525375,
+        0.12100768834352493
+      ],
+      "val_mae": [
+        "518.1442",
+        "397.45273",
+        "292.73184",
+        "199.46115",
+        "217.58398",
+        "228.48544",
+        "221.53029",
+        "221.79839",
+        "215.73099",
+        "227.59245",
+        "232.22205",
+        "220.37971",
+        "243.197",
+        "234.61858",
+        "234.73314",
+        "229.64455",
+        "240.1999",
+        "234.2209",
+        "251.92024",
+        "246.67534",
+        "236.47246",
+        "241.48436",
+        "230.13136",
+        "218.84476"
+      ]
+    },
+    {
+      "Mumbai": {
+        "years": [
+          2024,
+          2025,
+          2026,
+          2027,
+          2028,
+          2029,
+          2030,
+          2031,
+          2032,
+          2033,
+          2034,
+          2035
+        ],
+        "mean_trajectory": [
+          1544.5988513399457,
+          1737.292036276705,
+          1570.9726884806284,
+          1636.1855365422311,
+          1643.856326472463,
+          1601.0304938445565,
+          1600.4100609596126,
+          1611.8572623421553,
+          1586.635451219963,
+          1571.8045796216247,
+          1617.863438083853,
+          1598.6648519332543
+        ],
+        "std_trajectory": [
+          125.80050814184109,
+          152.57948902423888,
+          186.03129620284386,
+          211.10421909380977,
+          178.86955451599064,
+          225.1771495438221,
+          194.1288211193758,
+          215.04942469143063,
+          213.03413921416146,
+          244.27122154914045,
+          255.8189575580225,
+          240.90501996982923
+        ],
+        "ci_lower": [
+          1298.029855381937,
+          1438.2362377891968,
+          1206.3513479230546,
+          1222.421267118364,
+          1293.2719996211213,
+          1159.6832807386652,
+          1219.917571565636,
+          1190.3603899469513,
+          1169.0885383602065,
+          1093.0329853853095,
+          1116.458281270129,
+          1126.491012792389
+        ],
+        "ci_upper": [
+          1791.1678472979543,
+          2036.347834764213,
+          1935.5940290382023,
+          2049.949805966098,
+          1994.4406533238048,
+          2042.3777069504479,
+          1980.902550353589,
+          2033.3541347373593,
+          2004.1823640797195,
+          2050.57617385794,
+          2119.2685948975773,
+          2070.8386910741197
+        ],
+        "area_2035": 1598.6648519332543,
+        "ci_lower_2035": 1126.491012792389,
+        "ci_upper_2035": 2070.8386910741197,
+        "growth_pct": 10.170647236528843,
+        "current_area": "1451.0806"
+      },
+      "Delhi_NCR": {
+        "years": [
+          2024,
+          2025,
+          2026,
+          2027,
+          2028,
+          2029,
+          2030,
+          2031,
+          2032,
+          2033,
+          2034,
+          2035
+        ],
+        "mean_trajectory": [
+          2875.7245634675483,
+          2628.878335572888,
+          2602.6204673756456,
+          2545.2918051562838,
+          2482.0576898193035,
+          2479.2970121493813,
+          2441.070418518132,
+          2442.7356048307215,
+          2351.3731050502433,
+          2411.293227449455,
+          2374.6572632271227,
+          2343.497570031708
+        ],
+        "std_trajectory": [
+          201.87744373176287,
+          186.9950534259353,
+          217.2293933674553,
+          253.41299323354272,
+          214.15888087773993,
+          231.19488809744072,
+          219.00613145724304,
+          261.6087222010381,
+          186.38158313052327,
+          237.71356993800052,
+          200.4911825870133,
+          219.77574235656704
+        ],
+        "ci_lower": [
+          2480.044773753293,
+          2262.3680308580547,
+          2176.850856375433,
+          2048.60233841854,
+          2062.306283298933,
+          2026.1550314783976,
+          2011.8184008619357,
+          1929.982509316687,
+          1986.0652021144178,
+          1945.374630370974,
+          1981.6945453565768,
+          1912.7371150128367
+        ],
+        "ci_upper": [
+          3271.4043531818033,
+          2995.388640287721,
+          3028.390078375858,
+          3041.9812718940275,
+          2901.809096339674,
+          2932.438992820365,
+          2870.3224361743287,
+          2955.488700344756,
+          2716.681007986069,
+          2877.211824527936,
+          2767.6199810976686,
+          2774.2580250505794
+        ],
+        "area_2035": 2343.497570031708,
+        "ci_lower_2035": 1912.7371150128367,
+        "ci_upper_2035": 2774.2580250505794,
+        "growth_pct": -19.74500537055819,
+        "current_area": "2920.0645"
+      },
+      "Bangalore": {
+        "years": [
+          2024,
+          2025,
+          2026,
+          2027,
+          2028,
+          2029,
+          2030,
+          2031,
+          2032,
+          2033,
+          2034,
+          2035
+        ],
+        "mean_trajectory": [
+          1625.3448425652105,
+          1784.7288930207442,
+          1442.4413059849173,
+          1513.565295429727,
+          1494.606843705141,
+          1401.585882413124,
+          1398.5633876022018,
+          1369.6778684450433,
+          1352.1382072130784,
+          1306.402887247578,
+          1350.0144972819814,
+          1326.6111551860226
+        ],
+        "std_trajectory": [
+          132.82755839860008,
+          144.43673932498433,
+          122.67668586433052,
+          140.14363150267468,
+          149.48036670762298,
+          163.74578494965849,
+          166.78944600526276,
+          163.04486552793531,
+          174.7565303269832,
+          142.89813217074612,
+          152.9901692008386,
+          172.51686439535652
+        ],
+        "ci_lower": [
+          1365.0028281039542,
+          1501.632883943775,
+          1201.9950016908294,
+          1238.8837776844846,
+          1201.6253249582,
+          1080.6441439117934,
+          1071.6560734318869,
+          1050.10993201029,
+          1009.6154077721914,
+          1026.3225481929157,
+          1050.1537656483379,
+          988.4781009711239
+        ],
+        "ci_upper": [
+          1885.6868570264667,
+          2067.8249020977137,
+          1682.8876102790052,
+          1788.2468131749695,
+          1787.588362452082,
+          1722.5276209144545,
+          1725.4707017725168,
+          1689.2458048797964,
+          1694.6610066539656,
+          1586.4832263022404,
+          1649.875228915625,
+          1664.7442094009214
+        ],
+        "area_2035": 1326.6111551860226,
+        "ci_lower_2035": 988.4781009711239,
+        "ci_upper_2035": 1664.7442094009214,
+        "growth_pct": 22.781020336712356,
+        "current_area": "1080.4692"
+      },
+      "Hyderabad": {
+        "years": [
+          2024,
+          2025,
+          2026,
+          2027,
+          2028,
+          2029,
+          2030,
+          2031,
+          2032,
+          2033,
+          2034,
+          2035
+        ],
+        "mean_trajectory": [
+          1992.386960158532,
+          1996.95862438262,
+          1822.8074335673316,
+          1760.8066705618314,
+          1716.6729576564828,
+          1600.9074177076122,
+          1488.8602003743981,
+          1516.5916619537745,
+          1459.3800762685141,
+          1400.2758136523682,
+          1392.066450608161,
+          1352.3008725603688
+        ],
+        "std_trajectory": [
+          147.20724295040185,
+          169.19339156721807,
+          173.65681324970376,
+          151.64860539690534,
+          196.86699228228412,
+          200.52562157358648,
+          156.44558215569347,
+          184.95015220294565,
+          167.96524044846544,
+          145.57235429306658,
+          133.99915233791472,
+          100.98344199121888
+        ],
+        "ci_lower": [
+          1703.8607639757445,
+          1665.3395769108724,
+          1482.4400795979122,
+          1463.575403983897,
+          1330.813652783206,
+          1207.8771994233828,
+          1182.226859349239,
+          1154.089363636001,
+          1130.1682049895219,
+          1114.9539992379578,
+          1129.4281120258481,
+          1154.3733262575797
+        ],
+        "ci_upper": [
+          2280.91315634132,
+          2328.5776718543675,
+          2163.174787536751,
+          2058.0379371397657,
+          2102.5322625297595,
+          1993.9376359918417,
+          1795.4935413995572,
+          1879.093960271548,
+          1788.5919475475064,
+          1685.5976280667787,
+          1654.7047891904738,
+          1550.228418863158
+        ],
+        "area_2035": 1352.3008725603688,
+        "ci_lower_2035": 1154.3733262575797,
+        "ci_upper_2035": 1550.228418863158,
+        "growth_pct": -36.86886237589645,
+        "current_area": "2142.0505"
+      },
+      "Chennai": {
+        "years": [
+          2024,
+          2025,
+          2026,
+          2027,
+          2028,
+          2029,
+          2030,
+          2031,
+          2032,
+          2033,
+          2034,
+          2035
+        ],
+        "mean_trajectory": [
+          1438.566384076906,
+          1562.658894383891,
+          1715.442998398941,
+          1829.5413265018115,
+          1860.798393269782,
+          1995.7587312652424,
+          2056.628295375633,
+          2158.394349195198,
+          2227.3339075659665,
+          2298.480031248479,
+          2315.932104103954,
+          2369.9844766620913
+        ],
+        "std_trajectory": [
+          138.2472885089659,
+          161.85198566489785,
+          190.51571990013719,
+          232.0410922959445,
+          231.7309141620021,
+          247.39392770613262,
+          254.9183343780502,
+          285.249192289777,
+          245.88198430880172,
+          254.61666830313206,
+          310.33121912593407,
+          261.64297383424736
+        ],
+        "ci_lower": [
+          1167.6016985993328,
+          1245.4290024806912,
+          1342.032187394672,
+          1374.7407856017603,
+          1406.605801512258,
+          1510.8666329612224,
+          1556.9883599946547,
+          1599.3059323072353,
+          1745.405218320715,
+          1799.4313613743402,
+          1707.682914617123,
+          1857.1642479469665
+        ],
+        "ci_upper": [
+          1709.531069554479,
+          1879.8887862870909,
+          2088.8538094032097,
+          2284.3418674018626,
+          2314.990985027306,
+          2480.6508295692624,
+          2556.2682307566115,
+          2717.482766083161,
+          2709.262596811218,
+          2797.528701122618,
+          2924.1812935907847,
+          2882.804705377216
+        ],
+        "area_2035": 2369.9844766620913,
+        "ci_lower_2035": 1857.1642479469665,
+        "ci_upper_2035": 2882.804705377216,
+        "growth_pct": 73.71369271619513,
+        "current_area": "1364.3049"
+      },
+      "Pune": {
+        "years": [
+          2024,
+          2025,
+          2026,
+          2027,
+          2028,
+          2029,
+          2030,
+          2031,
+          2032,
+          2033,
+          2034,
+          2035
+        ],
+        "mean_trajectory": [
+          1642.883501492072,
+          1754.0643723583505,
+          1722.8594616110568,
+          1718.7571091761877,
+          1746.8746543963573,
+          1807.8105375270438,
+          1769.2516082803268,
+          1805.6675497938813,
+          1771.286132976102,
+          1751.3083275876695,
+          1803.1843362218085,
+          1773.7572449024876
+        ],
+        "std_trajectory": [
+          136.67374590707854,
+          139.15831752416565,
+          147.615902374426,
+          164.90328241747312,
+          122.99749881360445,
+          149.6195031957221,
+          162.3555942166631,
+          113.2608884652199,
+          167.76139200856983,
+          138.54620826371652,
+          156.1154457822129,
+          159.934124497644
+        ],
+        "ci_lower": [
+          1375.002959514198,
+          1481.314070010986,
+          1433.5322929571817,
+          1395.5466756379403,
+          1505.7995567216926,
+          1514.5563112634286,
+          1451.0346436156672,
+          1583.6762084020504,
+          1442.4738046393052,
+          1479.7577593907852,
+          1497.1980624886712,
+          1460.2863608871053
+        ],
+        "ci_upper": [
+          1910.7640434699458,
+          2026.814674705715,
+          2012.1866302649319,
+          2041.967542714435,
+          1987.949752071022,
+          2101.064763790659,
+          2087.4685729449866,
+          2027.6588911857123,
+          2100.098461312899,
+          2022.8588957845539,
+          2109.1706099549456,
+          2087.22812891787
+        ],
+        "area_2035": 1773.7572449024876,
+        "ci_lower_2035": 1460.2863608871053,
+        "ci_upper_2035": 2087.22812891787,
+        "growth_pct": 2.24410510274974,
+        "current_area": "1734.8259"
+      },
+      "Ahmedabad": {
+        "years": [
+          2024,
+          2025,
+          2026,
+          2027,
+          2028,
+          2029,
+          2030,
+          2031,
+          2032,
+          2033,
+          2034,
+          2035
+        ],
+        "mean_trajectory": [
+          1339.16496300073,
+          1331.4524120317087,
+          1291.6730959763913,
+          1273.8227523003834,
+          1258.0114900589328,
+          1255.6960059187538,
+          1236.8346134165263,
+          1214.1823212321044,
+          1184.23034408849,
+          1185.098273688637,
+          1208.2107906316412,
+          1189.4984998849957
+        ],
+        "std_trajectory": [
+          108.34406795929456,
+          94.63434418854244,
+          119.84673558188283,
+          119.6003582624783,
+          108.90797594133922,
+          112.27566037840641,
+          123.38386663161697,
+          98.72588878818864,
+          107.75764030756962,
+          109.87741085051883,
+          109.78099087904793,
+          107.84694973877669
+        ],
+        "ci_lower": [
+          1126.8105898005126,
+          1145.9690974221655,
+          1056.773494235901,
+          1039.406050105926,
+          1044.551857213908,
+          1035.6357115770772,
+          995.0022348185571,
+          1020.6795792072546,
+          973.0253690856536,
+          969.7385484216201,
+          993.0400485087073,
+          978.1184783969934
+        ],
+        "ci_upper": [
+          1551.5193362009475,
+          1516.935726641252,
+          1526.5726977168817,
+          1508.2394544948409,
+          1471.4711229039576,
+          1475.7563002604304,
+          1478.6669920144955,
+          1407.6850632569542,
+          1395.4353190913264,
+          1400.457998955654,
+          1423.3815327545751,
+          1400.878521372998
+        ],
+        "area_2035": 1189.4984998849957,
+        "ci_lower_2035": 978.1184783969934,
+        "ci_upper_2035": 1400.878521372998,
+        "growth_pct": -15.23249965805583,
+        "current_area": "1403.2483"
+      }
+    },
+    {
+      "mae": "330.3471",
+      "rmse": "446.60474",
+      "r2": "0.5590216",
+      "mape": "20.33643"
+    }
+  ],
+  "alerts": {
+    "model": "RealTimeChangeDetector(\n  (encoder): UrbanClassifier(\n    (blocks): ModuleList(\n      (0): Sequential(\n        (0): Conv2dNormActivation(\n          (0): Conv2d(6, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)\n          (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n          (2): SiLU(inplace=True)\n        )\n        (1): Sequential(\n          (0): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)\n                (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(32, 8, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(8, 32, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (2): Conv2dNormActivation(\n                (0): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.0, mode=row)\n          )\n        )\n        (2): Sequential(\n          (0): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(16, 96, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(96, 96, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=96, bias=False)\n                (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(96, 4, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(4, 96, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(96, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.0125, mode=row)\n          )\n          (1): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(144, 144, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=144, bias=False)\n                (1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(144, 6, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(6, 144, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(144, 24, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.025, mode=row)\n          )\n        )\n      )\n      (1): Sequential(\n        (0): Sequential(\n          (0): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(24, 144, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(144, 144, kernel_size=(5, 5), stride=(2, 2), padding=(2, 2), groups=144, bias=False)\n                (1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(144, 6, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(6, 144, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(144, 40, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(40, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.037500000000000006, mode=row)\n          )\n          (1): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(40, 240, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(240, 240, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), groups=240, bias=False)\n                (1): BatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(240, 10, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(10, 240, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(240, 40, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(40, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.05, mode=row)\n          )\n        )\n        (1): Sequential(\n          (0): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(40, 240, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(240, 240, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=240, bias=False)\n                (1): BatchNorm2d(240, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(240, 10, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(10, 240, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(240, 80, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(80, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.0625, mode=row)\n          )\n          (1): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(80, 480, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=480, bias=False)\n                (1): BatchNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(480, 20, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(20, 480, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(480, 80, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(80, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.07500000000000001, mode=row)\n          )\n          (2): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(80, 480, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=480, bias=False)\n                (1): BatchNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(480, 20, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(20, 480, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(480, 80, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(80, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.08750000000000001, mode=row)\n          )\n        )\n      )\n      (2): Sequential(\n        (0): Sequential(\n          (0): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(80, 480, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(480, 480, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), groups=480, bias=False)\n                (1): BatchNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(480, 20, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(20, 480, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(480, 112, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(112, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.1, mode=row)\n          )\n          (1): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(112, 672, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(672, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(672, 672, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), groups=672, bias=False)\n                (1): BatchNorm2d(672, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(672, 28, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(28, 672, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(672, 112, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(112, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.1125, mode=row)\n          )\n          (2): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(112, 672, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(672, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(672, 672, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), groups=672, bias=False)\n                (1): BatchNorm2d(672, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(672, 28, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(28, 672, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(672, 112, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(112, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.125, mode=row)\n          )\n        )\n        (1): Sequential(\n          (0): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(112, 672, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(672, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(672, 672, kernel_size=(5, 5), stride=(2, 2), padding=(2, 2), groups=672, bias=False)\n                (1): BatchNorm2d(672, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(672, 28, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(28, 672, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(672, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.1375, mode=row)\n          )\n          (1): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(192, 1152, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(1152, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(1152, 1152, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), groups=1152, bias=False)\n                (1): BatchNorm2d(1152, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(1152, 48, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(48, 1152, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(1152, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.15000000000000002, mode=row)\n          )\n          (2): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(192, 1152, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(1152, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(1152, 1152, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), groups=1152, bias=False)\n                (1): BatchNorm2d(1152, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(1152, 48, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(48, 1152, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(1152, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.1625, mode=row)\n          )\n          (3): MBConv(\n            (block): Sequential(\n              (0): Conv2dNormActivation(\n                (0): Conv2d(192, 1152, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(1152, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (1): Conv2dNormActivation(\n                (0): Conv2d(1152, 1152, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), groups=1152, bias=False)\n                (1): BatchNorm2d(1152, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n                (2): SiLU(inplace=True)\n              )\n              (2): SqueezeExcitation(\n                (avgpool): AdaptiveAvgPool2d(output_size=1)\n                (fc1): Conv2d(1152, 48, kernel_size=(1, 1), stride=(1, 1))\n                (fc2): Conv2d(48, 1152, kernel_size=(1, 1), stride=(1, 1))\n                (activation): SiLU(inplace=True)\n                (scale_activation): Sigmoid()\n              )\n              (3): Conv2dNormActivation(\n                (0): Conv2d(1152, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)\n                (1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n              )\n            )\n            (stochastic_depth): StochasticDepth(p=0.17500000000000002, mode=row)\n          )\n        )\n      )\n    )\n    (fpn): FPN(\n      (lateral_convs): ModuleList(\n        (0): Conv2d(24, 256, kernel_size=(1, 1), stride=(1, 1))\n        (1): Conv2d(80, 256, kernel_size=(1, 1), stride=(1, 1))\n        (2): Conv2d(192, 256, kernel_size=(1, 1), stride=(1, 1))\n      )\n      (smooth_convs): ModuleList(\n        (0-2): 3 x Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n      )\n    )\n    (gap): AdaptiveAvgPool2d(output_size=1)\n    (head): ClassificationHead(\n      (head): Sequential(\n        (0): Linear(in_features=768, out_features=512, bias=True)\n        (1): ReLU(inplace=True)\n        (2): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n        (3): Dropout(p=0.3, inplace=False)\n        (4): Linear(in_features=512, out_features=256, bias=True)\n        (5): ReLU(inplace=True)\n        (6): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n        (7): Dropout(p=0.3, inplace=False)\n        (8): Linear(in_features=256, out_features=3, bias=True)\n      )\n    )\n  )\n  (change_head): Sequential(\n    (0): Linear(in_features=2304, out_features=256, bias=True)\n    (1): ReLU(inplace=True)\n    (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n    (3): Dropout(p=0.3, inplace=False)\n    (4): Linear(in_features=256, out_features=64, bias=True)\n    (5): ReLU(inplace=True)\n    (6): Linear(in_features=64, out_features=2, bias=True)\n  )\n  (severity_head): Sequential(\n    (0): Linear(in_features=2304, out_features=128, bias=True)\n    (1): ReLU(inplace=True)\n    (2): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n    (3): Dropout(p=0.2, inplace=False)\n    (4): Linear(in_features=128, out_features=5, bias=True)\n  )\n  (alert_type_head): Sequential(\n    (0): Linear(in_features=2304, out_features=128, bias=True)\n    (1): ReLU(inplace=True)\n    (2): Dropout(p=0.2, inplace=False)\n    (3): Linear(in_features=128, out_features=9, bias=True)\n  )\n)",
+    "change_acc": 1.0,
+    "alerts": 55,
+    "latency": {
+      "mean_ms": 77.48752300161868,
+      "p50_ms": 77.58210005704314,
+      "p95_ms": 90.70503997500055,
+      "p99_ms": 98.9661799557507,
+      "throughput": 12.905303476781809,
+      "city_coverage_sec": 774.8752300161868
+    },
+    "report": {
+      "report_id": "RPT-20260404-171711",
+      "generated_at": "2026-04-04T17:17:11.805954",
+      "total_alerts": 55,
+      "escalated_count": 4,
+      "by_severity": {
+        "LOW": 21,
+        "MEDIUM": 2,
+        "HIGH": 28,
+        "CRITICAL": 4
+      },
+      "by_city": {
+        "Mumbai": {
+          "total": 12,
+          "critical": 2,
+          "high": 7,
+          "protected_zone": 1
+        },
+        "Delhi_NCR": {
+          "total": 6,
+          "critical": 0,
+          "high": 3,
+          "protected_zone": 0
+        },
+        "Bangalore": {
+          "total": 7,
+          "critical": 0,
+          "high": 3,
+          "protected_zone": 3
+        },
+        "Hyderabad": {
+          "total": 9,
+          "critical": 0,
+          "high": 5,
+          "protected_zone": 2
+        },
+        "Chennai": {
+          "total": 8,
+          "critical": 2,
+          "high": 4,
+          "protected_zone": 2
+        },
+        "Pune": {
+          "total": 7,
+          "critical": 0,
+          "high": 2,
+          "protected_zone": 3
+        },
+        "Ahmedabad": {
+          "total": 6,
+          "critical": 0,
+          "high": 4,
+          "protected_zone": 0
+        }
+      },
+      "by_alert_type": {
+        "UNAUTHORIZED_CONSTRUCTION": 22,
+        "CRZ_VIOLATION": 3,
+        "LAKE_ENCROACHMENT": 27,
+        "FLOODPLAIN_ENCROACHMENT": 2,
+        "RAPID_DENSIFICATION": 1
+      },
+      "by_zone_type": {
+        "WETLAND": 2,
+        "CRZ_II": 1,
+        "RIVER_FLOODPLAIN": 2,
+        "GREEN_BELT": 4,
+        "FOREST_RESERVE": 1,
+        "LAKE_BUFFER": 1
+      },
+      "protected_zone_violations": 11,
+      "regulatory_actions_required": [
+        {
+          "alert_id": "ALERT-0007",
+          "city": "Chennai",
+          "zone": "Adyar/Cooum river floodplain",
+          "authority": "National Green Tribunal / State Irrigation Dept",
+          "response_deadline_hours": 12,
+          "penalty": "NGT-ordered demolition"
+        }
+      ]
+    },
+    "forecasts_available": true
+  }
+}

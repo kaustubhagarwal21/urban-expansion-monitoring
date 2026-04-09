@@ -1,0 +1,17 @@
+{
+  "backbone": "resnet50",
+  "seed": 123,
+  "oa": 0.9732360097323601,
+  "precision": 0.9758564968418983,
+  "recall": 0.9732360097323601,
+  "f1": 0.9738248682536331,
+  "miou": 0.9343431770957576,
+  "training_time_min": 5.71,
+  "cities": [
+    "Mumbai",
+    "Delhi_NCR",
+    "Bangalore"
+  ],
+  "dataset": "indian_cities_locked",
+  "checkpoint": "C:\\Users\\KAUSTUBH\\Desktop\\AISD PROJECT\\outputs\\models\\resnet50_seed123.pth"
+}

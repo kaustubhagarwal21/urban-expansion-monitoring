@@ -1,0 +1,14 @@
+\begin{table}[h]
+\centering
+\caption{Ablation study on EfficientNet-B0 (3 seeds, mean $\pm$ std).}
+\label{tab:ablation}
+\begin{tabular}{lccc}
+\toprule
+Configuration & OA (\%) & F1 & mIoU \\
+\midrule
+Full Method & 95.6 $\pm$ 1.9 & 0.958 $\pm$ 0.018 & 0.901 $\pm$ 0.039 \\
+w/o FPN & 95.3 $\pm$ 1.4 & 0.955 $\pm$ 0.013 & 0.893 $\pm$ 0.029 \\
+CE Loss Only & 96.0 $\pm$ 1.5 & 0.961 $\pm$ 0.014 & 0.908 $\pm$ 0.033 \\
+\bottomrule
+\end{tabular}
+\end{table}
