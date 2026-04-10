@@ -1,7 +1,7 @@
 """
 Prepare the locked 3-city Indian subset for the current research pipeline.
 
-This script follows the agreed shortlist in CLAUDE.md:
+This script follows the agreed shortlist in README.md:
   - Cities: Mumbai, Delhi_NCR, Bangalore
   - Main classifier imagery: 2021 / 2019 / 2023 Sentinel-2 pre-monsoon
   - Labels: WorldCover (primary), Dynamic World (secondary inventory)

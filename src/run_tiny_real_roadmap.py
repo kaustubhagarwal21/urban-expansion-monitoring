@@ -2,7 +2,7 @@
 Tiny real-data roadmap runner.
 
 Purpose:
-- Finish a working end-to-end pass of the CLAUDE.md roadmap quickly.
+- Finish a working end-to-end pass of the README.md roadmap quickly.
 - Use a very small real-data subset so training completes on an RTX 4070 Laptop GPU.
 - Preserve earlier EuroSAT checkpoints before Indian-data runs overwrite them.
 """
