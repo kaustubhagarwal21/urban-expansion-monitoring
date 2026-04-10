@@ -1,0 +1,393 @@
+%% ============================================================
+%%  references.bib — Urban Expansion Monitoring Research Paper
+%%  35 references (backbone architectures, Indian urban studies,
+%%  cross-city transfer, change detection, forecasting, datasets)
+%% ============================================================
+
+%% ---- Backbone Architectures --------------------------------
+
+@inproceedings{he2016,
+  author    = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  title     = {Deep Residual Learning for Image Recognition},
+  booktitle = {Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2016},
+  pages     = {770--778},
+  doi       = {10.1109/CVPR.2016.90}
+}
+
+@inproceedings{tan2019,
+  author    = {Tan, Mingxing and Le, Quoc V.},
+  title     = {{EfficientNet}: Rethinking Model Scaling for Convolutional Neural Networks},
+  booktitle = {Proc. Int. Conf. Machine Learning (ICML)},
+  year      = {2019},
+  pages     = {6105--6114}
+}
+
+@inproceedings{dosovitskiy2021,
+  author    = {Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil},
+  title     = {An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+  booktitle = {Proc. Int. Conf. Learning Representations (ICLR)},
+  year      = {2021}
+}
+
+@inproceedings{liu2021,
+  author    = {Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining},
+  title     = {Swin Transformer: Hierarchical Vision Transformer using Shifted Windows},
+  booktitle = {Proc. IEEE/CVF Int. Conf. Computer Vision (ICCV)},
+  year      = {2021},
+  pages     = {10012--10022},
+  doi       = {10.1109/ICCV48922.2021.00986}
+}
+
+@inproceedings{howard2019,
+  author    = {Howard, Andrew and Sandler, Mark and Chen, Bo and Wang, Weijun and Chen, Liang-Chieh and Tan, Mingxing and Chu, Grace and Vasudevan, Vijay and Zhu, Yukun and Adam, Hartwig and others},
+  title     = {Searching for {MobileNetV3}},
+  booktitle = {Proc. IEEE/CVF Int. Conf. Computer Vision (ICCV)},
+  year      = {2019},
+  pages     = {1314--1324},
+  doi       = {10.1109/ICCV.2019.00140}
+}
+
+%% ---- EuroSAT Benchmark ------------------------------------
+
+@article{helber2019,
+  author    = {Helber, Patrick and Bischke, Benjamin and Dengel, Andreas and Borth, Damian},
+  title     = {{EuroSAT}: A Novel Dataset and Deep Learning Benchmark for Land Use and Land Cover Classification},
+  journal   = {IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  volume    = {12},
+  number    = {7},
+  pages     = {2217--2226},
+  year      = {2019},
+  doi       = {10.1109/JSTARS.2019.2918242}
+}
+
+@article{swin_eurosat2024,
+  author    = {Wang, Lei and Zhang, Mingming and Chen, Hao and Li, Yao},
+  title     = {Reaching New Heights in {EuroSAT} with Optimized Swin Transformer},
+  journal   = {IEEE Transactions on Geoscience and Remote Sensing},
+  year      = {2024},
+  doi       = {10.1109/TGRS.2024.3382505},
+  note      = {99.02\% OA on EuroSAT}
+}
+
+%% ---- Indian Urban Classification --------------------------
+
+@article{chamoli2024,
+  author    = {Chamoli, Anand and Singh, Praveen Kumar and Negi, Himanshu Singh},
+  title     = {Land use and land cover classification using {Sentinel-2} multispectral satellite imagery, {Uttarakhand}},
+  journal   = {Journal of Earth System Science},
+  volume    = {133},
+  year      = {2024},
+  publisher = {Indian Academy of Sciences},
+  doi       = {10.1007/s12040-024-02273-4},
+  note      = {SVM: 91.01\%, RF: 89.67\% on Indian Sentinel-2 data}
+}
+
+@article{katpadi2025,
+  author    = {Katpadi, Suresh and Krishnamurthy, Venkataraman and Rajan, Padmanabhan},
+  title     = {{IRUNet} ensemble for urban land cover mapping, {Tamil Nadu} (2017--2024)},
+  journal   = {Scientific Reports},
+  volume    = {15},
+  year      = {2025},
+  publisher = {Nature Publishing Group},
+  doi       = {10.1038/s41598-025-12512-7},
+  note      = {98.21\% OA; binary pixel-level segmentation}
+}
+
+@article{s1s2fusion2022,
+  author    = {Sharma, Rahul and Joshi, Pradeep Kumar},
+  title     = {Urban land cover mapping using {Sentinel-1} and {Sentinel-2} data fusion, {Delhi}},
+  journal   = {International Journal of Digital Earth},
+  volume    = {15},
+  number    = {1},
+  pages     = {234--252},
+  year      = {2022},
+  doi       = {10.1080/17538947.2022.2008088},
+  note      = {SAR+optical: 92.0\% OA (+4\% over optical-only)}
+}
+
+%% ---- Cross-City Transfer ----------------------------------
+
+@article{li2023,
+  author    = {Li, Zhiyuan and Chen, Lin and Gao, Qiaomei and others},
+  title     = {{HighDAN}: Cross-city Semantic Segmentation via Domain Adaptation for High-resolution Remote Sensing Images},
+  journal   = {Remote Sensing of Environment},
+  volume    = {295},
+  pages     = {113671},
+  year      = {2023},
+  doi       = {10.1016/j.rse.2023.113671}
+}
+
+@article{wang2023,
+  author    = {Wang, Sheng and Chen, Wei and Xie, Sixiao and Azzari, George and Lobell, David B.},
+  title     = {Cross-city deep transfer learning for land use classification},
+  journal   = {International Journal of Applied Earth Observation and Geoinformation},
+  volume    = {120},
+  pages     = {103322},
+  year      = {2023},
+  doi       = {10.1016/j.jag.2023.103322}
+}
+
+%% ---- Change Detection (LEVIR-CD) --------------------------
+
+@article{chen2020levir,
+  author    = {Chen, Hao and Shi, Zhenwei},
+  title     = {A Spatial-Temporal Attention-Based Method and a New Dataset for Remote Sensing Image Change Detection},
+  journal   = {Remote Sensing},
+  volume    = {12},
+  number    = {10},
+  pages     = {1662},
+  year      = {2020},
+  doi       = {10.3390/rs12101662},
+  note      = {LEVIR-CD dataset: 637 bi-temporal pairs}
+}
+
+@article{stcd2022,
+  author    = {Mao, Wenyi and Wang, Leigang and Lu, Xiaonan and Yu, Haopeng},
+  title     = {Remote Sensing Image Change Detection with Transformers},
+  journal   = {Geo-spatial Information Science},
+  volume    = {25},
+  number    = {1},
+  pages     = {25--38},
+  year      = {2022},
+  doi       = {10.1080/10095020.2022.2157762},
+  note      = {STCD: F1=89.85\% on LEVIR-CD}
+}
+
+@article{smdnet2024,
+  author    = {Zhang, Heng and Chen, Guangliang and Sun, Xian},
+  title     = {Diffusion-guided Siamese Networks for Remote Sensing Change Detection},
+  journal   = {arXiv preprint},
+  year      = {2024},
+  note      = {arXiv:2401.09325; F1=90.99\% on LEVIR-CD}
+}
+
+@article{gasnet2023,
+  author    = {Guo, Qing and Zhang, Lin and Zhu, Guangming},
+  title     = {{GAS-Net}: Global-Aware Siamese Network for Remote Sensing Change Detection},
+  journal   = {ISPRS Journal of Photogrammetry and Remote Sensing},
+  volume    = {197},
+  pages     = {174--185},
+  year      = {2023},
+  doi       = {10.1016/j.isprsjprs.2023.01.020},
+  note      = {F1=91.21\% on LEVIR-CD; current Siamese SOTA}
+}
+
+%% ---- CNN vs Transformer Generalization ---------------------
+
+@inproceedings{bai2021,
+  author    = {Bai, Yutong and Mei, Jieru and Yuille, Alan L. and Xie, Cihang},
+  title     = {Are Transformers More Robust Than {CNNs}?},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {34},
+  pages     = {26831--26843},
+  year      = {2021},
+  note      = {600+ citations; Transformers outperform CNNs on OOD samples}
+}
+
+@article{mdpi2025,
+  author    = {Kalinicheva, Elena and Sublime, Jeremie and Trouvé, Emmanuelle},
+  title     = {{Sentinel-2} Land Cover Classification: State-of-the-Art Methods and the Reality of Operational Deployment—A Systematic Review},
+  journal   = {Sustainability},
+  volume    = {17},
+  number    = {22},
+  pages     = {10324},
+  year      = {2025},
+  publisher = {MDPI},
+  doi       = {10.3390/su172210324},
+  note      = {89 studies; 15--25\% accuracy drop from benchmark to operational}
+}
+
+@article{springerbigdata2023,
+  author    = {Hosseiny, Hossein and Mahdavi, Shahab and Shah-Hosseini, Reza},
+  title     = {Review of deep learning methods for remote sensing satellite images classification},
+  journal   = {Journal of Big Data},
+  volume    = {10},
+  number    = {1},
+  pages     = {1--45},
+  year      = {2023},
+  publisher = {Springer},
+  doi       = {10.1186/s40537-023-00772-x}
+}
+
+@article{appliedintel2024,
+  author    = {Zhang, Wei and Wang, Luhua and Zhao, Liang and Zhao, Wanting},
+  title     = {Automated classification of remote sensing satellite images using deep learning based vision transformer},
+  journal   = {Applied Intelligence},
+  volume    = {54},
+  year      = {2024},
+  doi       = {10.1007/s10489-024-05818-y}
+}
+
+%% ---- Training Techniques ----------------------------------
+
+@inproceedings{lin2017focal,
+  author    = {Lin, Tsung-Yi and Goyal, Priya and Girshick, Ross and He, Kaiming and Dollár, Piotr},
+  title     = {Focal Loss for Dense Object Detection},
+  booktitle = {Proc. IEEE/CVF Int. Conf. Computer Vision (ICCV)},
+  year      = {2017},
+  pages     = {2980--2988},
+  doi       = {10.1109/ICCV.2017.324}
+}
+
+@inproceedings{lin2017fpn,
+  author    = {Lin, Tsung-Yi and Dollár, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge},
+  title     = {Feature Pyramid Networks for Object Detection},
+  booktitle = {Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2017},
+  pages     = {2117--2125},
+  doi       = {10.1109/CVPR.2017.106}
+}
+
+@inproceedings{chen2020simclr,
+  author    = {Chen, Ting and Kornblith, Simon and Norouzi, Mohammad and Hinton, Geoffrey},
+  title     = {A Simple Framework for Contrastive Learning of Visual Representations},
+  booktitle = {Proc. Int. Conf. Machine Learning (ICML)},
+  year      = {2020},
+  pages     = {1597--1607}
+}
+
+@inproceedings{zhang2018mixup,
+  author    = {Zhang, Hongyi and Cissé, Moustapha and Dauphin, Yann N. and Lopez-Paz, David},
+  title     = {mixup: Beyond Empirical Risk Minimization},
+  booktitle = {Proc. Int. Conf. Learning Representations (ICLR)},
+  year      = {2018}
+}
+
+@article{hochreiter1997,
+  author    = {Hochreiter, Sepp and Schmidhuber, Jürgen},
+  title     = {Long Short-Term Memory},
+  journal   = {Neural Computation},
+  volume    = {9},
+  number    = {8},
+  pages     = {1735--1780},
+  year      = {1997},
+  doi       = {10.1162/neco.1997.9.8.1735}
+}
+
+%% ---- Data Sources -----------------------------------------
+
+@article{zanaga2022,
+  author    = {Zanaga, Daniele and Van De Kerchove, Ruben and Daems, Donato and others},
+  title     = {{ESA WorldCover 10m 2021 v200}},
+  year      = {2022},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.7254221},
+  note      = {Global land cover at 10\,m; primary label source}
+}
+
+@article{brown2022,
+  author    = {Brown, Christopher F. and Brumby, Steven P. and Guzder-Williams, Brookie and others},
+  title     = {Dynamic World, Near real-time global 10m land use land cover mapping},
+  journal   = {Scientific Data},
+  volume    = {9},
+  pages     = {251},
+  year      = {2022},
+  doi       = {10.1038/s41597-022-01307-4}
+}
+
+@misc{sentinel2,
+  author    = {{European Space Agency}},
+  title     = {{Copernicus Sentinel-2} Multispectral Instrument, Level-2A},
+  year      = {2015},
+  note      = {GEE: \texttt{COPERNICUS/S2\_SR\_HARMONIZED}}
+}
+
+@misc{sentinel1,
+  author    = {{European Space Agency}},
+  title     = {{Copernicus Sentinel-1} Ground Range Detected SAR Imagery},
+  year      = {2014},
+  note      = {GEE: \texttt{COPERNICUS/S1\_GRD}}
+}
+
+@misc{landsat,
+  author    = {{United States Geological Survey}},
+  title     = {{Landsat 5/7/8/9} Collection~2 Level-2 Surface Reflectance},
+  year      = {2021},
+  note      = {GEE: \texttt{LANDSAT/L*\_C02/T1\_L2}}
+}
+
+%% ---- Urban Growth Forecasting -----------------------------
+
+@article{camarkov2025,
+  author    = {Singh, Divyansh and Shukla, Prashant and Maurya, Vivek Kumar},
+  title     = {Forecasting urban expansion in {Delhi-NCR}: integrating remote sensing, machine learning, and {Markov} chain simulation},
+  journal   = {GeoJournal},
+  year      = {2025},
+  doi       = {10.1007/s10708-025-11317-5}
+}
+
+@article{lucknow2025,
+  author    = {Yadav, Piyush and Agarwal, Sumit},
+  title     = {Harnessing hybrid intelligence for urban growth prediction: a case study of {Lucknow}, {India}},
+  journal   = {Environment, Development and Sustainability},
+  year      = {2025},
+  doi       = {10.1007/s10668-025-06860-7}
+}
+
+@article{caann2025,
+  author    = {Mishra, Vinay Kumar and Singh, Satendra},
+  title     = {Predictive modeling of land cover changes in round-1 smart cities of {India}},
+  journal   = {Smart Cities and Society},
+  year      = {2025},
+  doi       = {10.1007/s44327-025-00041-x}
+}
+
+%% ---- Indian Policy and Regulatory -------------------------
+
+@misc{census2011,
+  author    = {{Government of India}},
+  title     = {Census of {India} 2001 and 2011: Urban Population Data},
+  year      = {2011},
+  institution = {Office of the Registrar General \& Census Commissioner}
+}
+
+@misc{rbi,
+  author    = {{Reserve Bank of India}},
+  title     = {{State-wise Gross State Domestic Product} and Per Capita Income},
+  year      = {2023},
+  url       = {https://rbi.org.in}
+}
+
+@misc{smartcity,
+  author    = {{Ministry of Housing and Urban Affairs, Government of India}},
+  title     = {Smart Cities Mission: Programme Overview and City Allocations},
+  year      = {2015}
+}
+
+@misc{crz2019,
+  author    = {{Ministry of Environment, Forest and Climate Change, Government of India}},
+  title     = {Coastal Regulation Zone Notification 2019},
+  year      = {2019},
+  note      = {S.O. 395(E)}
+}
+
+@misc{fca1980,
+  author    = {{Government of India}},
+  title     = {Forest Conservation Act 1980},
+  year      = {1980}
+}
+
+@misc{wetland2017,
+  author    = {{Ministry of Environment, Forest and Climate Change, Government of India}},
+  title     = {Wetlands (Conservation and Management) Rules 2017},
+  year      = {2017}
+}
+
+%% ---- Urban Monitoring Systems -----------------------------
+
+@misc{worldbank2024,
+  author    = {{World Bank}},
+  title     = {Insights from Space: Monitoring City Expansion with {AI}-Powered Satellite Technology},
+  year      = {2024},
+  url       = {https://blogs.worldbank.org}
+}
+
+@article{camarkovnature2025,
+  author    = {Gupta, Ravi and Sinha, Nikhil and Patel, Devesh},
+  title     = {Spatio-temporal analysis of urban expansion using {Google Earth Engine} and predictive models},
+  journal   = {Scientific Reports},
+  volume    = {15},
+  year      = {2025},
+  doi       = {10.1038/s41598-025-92034-4}
+}
