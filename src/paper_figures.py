@@ -40,21 +40,21 @@ from configs.config import *
 
 def fig_architecture():
     """Generate the 5-pillar framework architecture diagram."""
-    fig, ax = plt.subplots(1, 1, figsize=(16, 8))
-    ax.set_xlim(0, 16)
+    fig, ax = plt.subplots(1, 1, figsize=(20, 8))
+    ax.set_xlim(0, 20)
     ax.set_ylim(0, 8)
     ax.axis("off")
 
     # Title
-    ax.text(8, 7.5, "The Living Map: Urban Expansion Monitoring Framework",
-            ha="center", va="center", fontsize=16, fontweight="bold")
+    ax.text(8.5, 7.5, "The Living Map: Urban Expansion Monitoring Framework",
+            ha="center", va="center", fontsize=22, fontweight="bold")
 
     # Transfer Learning Core (center bar)
-    core = FancyBboxPatch((1, 3.8), 14, 0.8, boxstyle="round,pad=0.1",
+    core = FancyBboxPatch((0.8, 3.4), 15.4, 1.0, boxstyle="round,pad=0.15",
                           facecolor="#2c3e50", edgecolor="none")
     ax.add_patch(core)
-    ax.text(8, 4.2, "Transfer Learning Core (EfficientNet-B0 + FPN + Progressive Fine-Tuning)",
-            ha="center", va="center", fontsize=11, color="white", fontweight="bold")
+    ax.text(8.5, 3.9, "Transfer Learning Core (ResNet50 + FPN + Progressive Fine-Tuning)",
+            ha="center", va="center", fontsize=16, color="white", fontweight="bold")
 
     # 5 Pillars (above)
     pillar_info = [
@@ -65,41 +65,48 @@ def fig_architecture():
         ("V\nReal-Time", "#3498db"),
     ]
     for i, (label, color) in enumerate(pillar_info):
-        x = 1.5 + i * 2.8
-        box = FancyBboxPatch((x, 5.2), 2.2, 1.8, boxstyle="round,pad=0.1",
+        x = 1.0 + i * 3.1
+        box = FancyBboxPatch((x, 4.9), 2.6, 1.8, boxstyle="round,pad=0.12",
                              facecolor=color, edgecolor="none", alpha=0.85)
         ax.add_patch(box)
-        ax.text(x + 1.1, 6.1, label, ha="center", va="center",
-                fontsize=10, color="white", fontweight="bold")
-        # Arrow from pillar to core
-        ax.annotate("", xy=(x + 1.1, 4.6), xytext=(x + 1.1, 5.2),
-                    arrowprops=dict(arrowstyle="->", color=color, lw=2))
+        ax.text(x + 1.3, 5.8, label, ha="center", va="center",
+                fontsize=15, color="white", fontweight="bold")
+        ax.annotate("", xy=(x + 1.3, 4.4), xytext=(x + 1.3, 4.9),
+                    arrowprops=dict(arrowstyle="->", color=color, lw=2.5))
 
     # Data sources (below)
     data_sources = [
-        "Sentinel-2\n(10m, 2015-2023)", "Sentinel-1 SAR\n(10m, 2017-2023)",
-        "Landsat 5/7/8/9\n(30m, 1990-2023)", "Census + RBI\n(Socio-Economic)",
-        "ESA WorldCover\n(Labels)"
+        "Sentinel-2\n(10m, 2017-2023)", "Sentinel-1 SAR\n(10m, 2017-2023)",
+        "ESA WorldCover\n(Labels, 10m)", "Landsat 5/7/8/9\n(30m, 1990-2023)\n+ Census/RBI",
+        "Sentinel-2\n(Near-Real-Time)"
     ]
     for i, src in enumerate(data_sources):
-        x = 1.5 + i * 2.8
-        box = FancyBboxPatch((x, 1.0), 2.2, 1.2, boxstyle="round,pad=0.1",
-                             facecolor="#ecf0f1", edgecolor="#bdc3c7")
+        x = 1.0 + i * 3.1
+        box = FancyBboxPatch((x, 0.5), 2.6, 1.5, boxstyle="round,pad=0.12",
+                             facecolor="#ecf0f1", edgecolor="#bdc3c7", linewidth=1.2)
         ax.add_patch(box)
-        ax.text(x + 1.1, 1.6, src, ha="center", va="center", fontsize=8)
-        ax.annotate("", xy=(x + 1.1, 3.8), xytext=(x + 1.1, 2.2),
-                    arrowprops=dict(arrowstyle="->", color="#7f8c8d", lw=1.5))
+        ax.text(x + 1.3, 1.25, src, ha="center", va="center", fontsize=12)
+        ax.annotate("", xy=(x + 1.3, 3.4), xytext=(x + 1.3, 2.0),
+                    arrowprops=dict(arrowstyle="->", color="#7f8c8d", lw=2))
 
     # Outputs (right side)
-    ax.text(15.5, 6.5, "Outputs:", fontsize=10, fontweight="bold", ha="right")
+    out_box = FancyBboxPatch((16.8, 3.6), 2.8, 3.8, boxstyle="round,pad=0.15",
+                             facecolor="#f8f9fa", edgecolor="#2c3e50", linewidth=2)
+    ax.add_patch(out_box)
+    ax.text(18.2, 7.0, "Outputs", fontsize=16, fontweight="bold",
+            ha="center", va="center", color="#2c3e50")
     outputs = ["Urban Maps", "Change Detection", "Sprawl Forecasts",
                "Encroachment Alerts", "GradCAM Maps"]
     for i, out in enumerate(outputs):
-        ax.text(15.5, 5.8 - i * 0.5, f"  {out}", fontsize=9, ha="right", color="#2c3e50")
+        ax.text(18.2, 6.3 - i * 0.6, out, fontsize=13, ha="center", color="#2c3e50")
+
+    # Arrow from core to outputs box
+    ax.annotate("", xy=(16.8, 3.9), xytext=(16.2, 3.9),
+                arrowprops=dict(arrowstyle="->", color="#2c3e50", lw=2.5))
 
     plt.tight_layout()
     path = os.path.join(FIGURE_DIR, "fig1_architecture.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight", facecolor="white")
+    plt.savefig(path, dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
     print(f"  Fig 1 saved: {path}")
 

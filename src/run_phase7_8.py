@@ -594,24 +594,45 @@ def generate_fig_loco_heatmap():
 
 
 def generate_fig_urban_timeseries():
-    """Urban expansion time series per city."""
+    """Urban expansion time series per city with Bi-LSTM forecasts and CI bands."""
     print("  Fig 4: Urban expansion time series...")
     if not timeseries:
         print("    [SKIP] No urban_timeseries.json")
         return
 
+    # Load forecast data
+    forecast_path = os.path.join(os.path.dirname(RESULTS_DIR), "pillar4_forecasts.json")
+    forecasts = {}
+    if os.path.exists(forecast_path):
+        forecasts = json.load(open(forecast_path))
+        print("    Loaded pillar4_forecasts.json")
+
     fig, ax = plt.subplots(figsize=(10, 6))
     colors = {"Mumbai": "#e74c3c", "Delhi_NCR": "#3498db", "Bangalore": "#27ae60"}
 
     for city, data in timeseries.items():
+        c = colors.get(city, "gray")
         years = sorted(data.keys(), key=int)
         areas = [data[y]["urban_area_km2"] for y in years]
-        ax.plot([int(y) for y in years], areas, "o-", color=colors.get(city, "gray"),
+        ax.plot([int(y) for y in years], areas, "o-", color=c,
                 label=city, linewidth=2, markersize=6)
+
+        # Add forecast dashed line + CI shading
+        if city in forecasts:
+            fc = forecasts[city]
+            f_years = [int(y) for y in fc["years"]]
+            f_mean = fc["mean_trajectory"]
+            f_lower = fc["ci_lower"]
+            f_upper = fc["ci_upper"]
+            # Connect last observed point to first forecast point
+            bridge_years = [int(years[-1])] + f_years
+            bridge_mean = [areas[-1]] + f_mean
+            ax.plot(bridge_years, bridge_mean, "--", color=c, linewidth=2, alpha=0.8)
+            ax.fill_between(f_years, f_lower, f_upper, color=c, alpha=0.15)
 
     ax.set_xlabel("Year", fontsize=12)
     ax.set_ylabel("Urban Area (sq km)", fontsize=12)
-    ax.set_title("Urban Expansion Time Series (Satellite-Derived)", fontsize=13, fontweight="bold")
+    ax.set_title("Urban Expansion Time Series (1990-2035)", fontsize=13, fontweight="bold")
     ax.legend(fontsize=11)
     ax.grid(True, alpha=0.3)
 

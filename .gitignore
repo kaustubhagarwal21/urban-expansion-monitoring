@@ -54,3 +54,20 @@ desktop.ini
 *.log
 *.tmp
 *.bak
+
+# ============================================================
+# LaTeX build artifacts + redundant paper exports
+# (keep main.tex, references.bib, main.pdf; drop the rest)
+# ============================================================
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/*.synctex.gz
+paper/*.docx
+paper/main_temp.*
+paper/main_icwite.*
+paper/main_pandoc.*
+paper/main_converted.*
+# stray root-level PDF export of the speaker card (source is webapp/speaker_card.html)
+Speaker Card*.pdf

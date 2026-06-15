@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.model_selection import GridSearchCV, train_test_split
-from sklearn.metrics import accuracy_score, f1_score, classification_report
+from sklearn.metrics import accuracy_score, f1_score, jaccard_score, classification_report
 from sklearn.pipeline import Pipeline
 
 warnings.filterwarnings('ignore')
@@ -152,15 +152,17 @@ def run_improved_svm(seed):
     svm_pred = grid.predict(X_test)
     svm_oa = accuracy_score(y_test, svm_pred) * 100
     svm_f1 = f1_score(y_test, svm_pred, average='macro')
+    svm_miou = jaccard_score(y_test, svm_pred, average='macro')
     svm_time = time.time() - t0
 
     print(f"Best params: {grid.best_params_}")
-    print(f"SVM (improved): OA={svm_oa:.2f}%, F1={svm_f1:.4f}, time={svm_time:.1f}s")
+    print(f"SVM (improved): OA={svm_oa:.2f}%, F1={svm_f1:.4f}, mIoU={svm_miou:.4f}, time={svm_time:.1f}s")
     print(classification_report(y_test, svm_pred, target_names=['Urban', 'Non-Urban', 'Transition']))
 
     results['svm_improved'] = {
         'oa': round(svm_oa, 2),
         'f1': round(float(svm_f1), 4),
+        'miou': round(float(svm_miou), 4),
         'best_params': {k: str(v) for k, v in grid.best_params_.items()},
         'pca_components': int(grid.best_estimator_.named_steps['pca'].n_components_),
         'time_sec': round(svm_time, 1),
@@ -179,13 +181,15 @@ def run_improved_svm(seed):
     rf_pred = rf_pipe.predict(X_test)
     rf_oa = accuracy_score(y_test, rf_pred) * 100
     rf_f1 = f1_score(y_test, rf_pred, average='macro')
+    rf_miou = jaccard_score(y_test, rf_pred, average='macro')
     rf_time = time.time() - t0
 
-    print(f"RF (improved): OA={rf_oa:.2f}%, F1={rf_f1:.4f}, time={rf_time:.1f}s")
+    print(f"RF (improved): OA={rf_oa:.2f}%, F1={rf_f1:.4f}, mIoU={rf_miou:.4f}, time={rf_time:.1f}s")
 
     results['rf_improved'] = {
         'oa': round(rf_oa, 2),
         'f1': round(float(rf_f1), 4),
+        'miou': round(float(rf_miou), 4),
         'time_sec': round(rf_time, 1),
     }
 
@@ -207,15 +211,19 @@ def main():
     for method in ['svm_improved', 'rf_improved']:
         oas = [all_results[f'seed_{s}'][method]['oa'] for s in SEEDS]
         f1s = [all_results[f'seed_{s}'][method]['f1'] for s in SEEDS]
+        mious = [all_results[f'seed_{s}'][method]['miou'] for s in SEEDS]
         summary[method] = {
             'oa_mean': round(float(np.mean(oas)), 2),
             'oa_std': round(float(np.std(oas)), 2),
             'f1_mean': round(float(np.mean(f1s)), 4),
             'f1_std': round(float(np.std(f1s)), 4),
+            'miou_mean': round(float(np.mean(mious)), 4),
+            'miou_std': round(float(np.std(mious)), 4),
             'per_seed_oa': {str(s): oas[i] for i, s in enumerate(SEEDS)},
         }
         print(f"{method:25s}: OA = {summary[method]['oa_mean']:.2f} +/- {summary[method]['oa_std']:.2f}%  "
-              f"F1 = {summary[method]['f1_mean']:.4f} +/- {summary[method]['f1_std']:.4f}")
+              f"F1 = {summary[method]['f1_mean']:.4f} +/- {summary[method]['f1_std']:.4f}  "
+              f"mIoU = {summary[method]['miou_mean']:.4f} +/- {summary[method]['miou_std']:.4f}")
 
     # Compare with published
     print(f"\n--- Comparison ---")
