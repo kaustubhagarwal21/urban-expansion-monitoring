@@ -1,0 +1,12 @@
+# frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# backend
+backend/__pycache__/
+**/__pycache__/
+
+# Demo patches are distributed via the Google Drive `webapp_assets/` folder
+# (kept out of git so the repo stays light and the folder is never half-populated).
+backend/sample_patches/

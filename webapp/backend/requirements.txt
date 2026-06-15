@@ -1,0 +1,4 @@
+# Backend-specific deps (project already provides torch, torchvision, timm, numpy, Pillow)
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9

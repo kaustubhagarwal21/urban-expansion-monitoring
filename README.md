@@ -1,8 +1,10 @@
 # Urban Expansion Monitoring Using Transfer Learning on Historical Satellite Imagery
 
-Conference-grade research project targeting **IGARSS / IEEE JSTARS / ISPRS / ACM SIGSPATIAL / CVPR EarthVision**.
+**Accepted at IEEE CHANDICON 2026.** Authors: Kaustubh Agarwal, Prajwal Gupta, Kabir Rai, P Manideep Reddy, Naman Khurana, Dr. Divyashree N — Dept. of CSE, PES University, Bengaluru.
 
 **Focus:** Indian metropolitan areas — Mumbai, Delhi NCR, Bangalore, Hyderabad, Chennai, Pune, Ahmedabad.
+
+An interactive demo web app (FastAPI + React) that explains the full pipeline live is in [`webapp/`](webapp/) — see [webapp/README.md](webapp/README.md).
 
 ---
 
@@ -34,15 +36,20 @@ All results on real Indian satellite data (Mumbai, Delhi NCR, Bangalore), 3-seed
 
 ## Data Download
 
-Training data (~7.5 GB) is hosted on Google Drive (excluded from this repo due to size):
+Large files (models, datasets) live on Google Drive (excluded from this repo due to size):
+**[Project Drive folder](https://drive.google.com/drive/folders/1mmgGRtjHyVpQLMTSQE8xUOFv1gslrpWv?usp=sharing)**
 
-**[Download Data from Google Drive](https://drive.google.com/drive/folders/1mmgGRtjHyVpQLMTSQE8xUOFv1gslrpWv?usp=sharing)**
+### Just want to run the demo web app?
+Grab the small **[`webapp_assets/`](https://drive.google.com/drive/folders/1OObUsL3L1_7BNz469kLLOG1hvGhGHzZ0)** folder (~190 MB) — the 4 model checkpoints the app uses plus the demo patches:
+`resnet50_best.pth`, `efficientnet_b0_best.pth`, `mobilenet_v3_small_best.pth`, `swin_tiny_best.pth`, and `sample_patches/`.
+Place the four `.pth` files in `outputs/models/` and the `sample_patches/` folder in `webapp/backend/`, then follow [webapp/README.md](webapp/README.md).
 
+### Full data (to reproduce all experiments)
 | Folder | Contents | Size |
 |---|---|---|
-| `models/` | Trained model checkpoints (.pth) | ~439 MB |
+| `models/` | All trained checkpoints (.pth) | ~440 MB |
 | `data/indian_cities_locked/` | Extracted Sentinel-2 patches (.npy) — Mumbai, Delhi NCR, Bangalore | ~4.7 GB |
-| `data/levir_cd/` | LEVIR-CD change detection dataset | ~2.35 GB |
+| `data/levir_cd/` | LEVIR-CD change-detection dataset | ~2.35 GB |
 
 After downloading, place the folders under the project root to match this structure:
 ```
@@ -54,7 +61,7 @@ AISD PROJECT/
     └── models/
 ```
 
-Raw GeoTIFF satellite files (Sentinel-2, Sentinel-1 SAR, Landsat) were exported from Google Earth Engine and are available in the same Drive folder under `urban_expansion_india/`.
+Raw GeoTIFF exports (Sentinel-2, Sentinel-1 SAR, Landsat from Google Earth Engine, ~6.9 GB) live in a **separate** Drive folder, `urban_expansion_india/`. They are only needed to re-extract patches from scratch — not for the web app or the published results.
 
 ---
 
