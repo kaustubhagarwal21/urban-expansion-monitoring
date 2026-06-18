@@ -23,6 +23,8 @@
 \usepackage{url}
 \usepackage{siunitx}
 \usepackage[capitalise]{cleveref}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
 
 \hypersetup{
   colorlinks=true,
@@ -40,49 +42,14 @@
 \title{Urban Expansion Monitoring Using Transfer Learning\\
 on Historical Satellite Imagery}
 
-\author{
-  \begin{minipage}[t]{0.32\textwidth}\centering
-    {\bfseries Kaustubh Agarwal}\\
-    Dept.\ of CSE\\
-    PES University\\
-    Bengaluru, India\\
-    pes1ug23cs291@pesu.pes.edu
-  \end{minipage}\hfill
-  \begin{minipage}[t]{0.32\textwidth}\centering
-    {\bfseries Prajwal Gupta}\\
-    Dept.\ of CSE\\
-    PES University\\
-    Bengaluru, India\\
-    pes1ug23cs426@pesu.pes.edu
-  \end{minipage}\hfill
-  \begin{minipage}[t]{0.32\textwidth}\centering
-    {\bfseries Kabir Rai}\\
-    Dept.\ of CSE\\
-    PES University\\
-    Bengaluru, India\\
-    pes1ug23cs274@pesu.pes.edu
-  \end{minipage}\\[1.2em]
-  \begin{minipage}[t]{0.32\textwidth}\centering
-    {\bfseries P Manideep Reddy}\\
-    Dept.\ of CSE\\
-    PES University\\
-    Bengaluru, India\\
-    pes1202201027@pesu.pes.edu
-  \end{minipage}\hfill
-  \begin{minipage}[t]{0.32\textwidth}\centering
-    {\bfseries Naman Khurana}\\
-    Dept.\ of CSE\\
-    PES University\\
-    Bengaluru, India\\
-    pes1ug23cs376@pesu.pes.edu
-  \end{minipage}\hfill
-  \begin{minipage}[t]{0.32\textwidth}\centering
-    {\bfseries Dr.\ Divyashree N}\\
-    Dept.\ of CSE\\
-    PES University\\
-    Bengaluru, India\\
-    divyashreen@pes.edu
-  \end{minipage}
+\author{%
+  \IEEEauthorblockN{Kaustubh Agarwal, Prajwal Gupta, Kabir Rai,
+    P~Manideep Reddy, Naman Khurana, and Divyashree N}
+  \IEEEauthorblockA{%
+    \textit{Department of Computer Science and Engineering} \\
+    \textit{PES University}, Bengaluru, India \\
+    \{pes1ug23cs291, pes1ug23cs426, pes1ug23cs274, pes1ug23cs376\}@pesu.pes.edu \\
+    pes1202201027@pesu.pes.edu, divyashreen@pes.edu}
 }
 
 \maketitle
@@ -91,7 +58,7 @@ on Historical Satellite Imagery}
 %%  ABSTRACT
 %% ============================================================
 \begin{abstract}
-Uncontrolled urban expansion in Indian metropolitan regions accelerates encroachment on legally protected zones, yet existing studies rely on single-city, single-seed SVM/RF benchmarks without downstream forecasting or alerting. We propose an end-to-end framework integrating transfer-learning classification, SAR--optical fusion, self-supervised pre-training, uncertainty-aware Bi-LSTM forecasting, and regulatory encroachment alerting. A benchmark of 2{,}730 Sentinel-2 patches across Mumbai, Delhi NCR, and Bangalore with a novel three-class taxonomy (Urban, Non-Urban, Transition) is constructed from ESA WorldCover 2021. Six model families (SVM, Random Forest, MobileNetV3-Small, EfficientNet-B0, Swin-Tiny, ResNet50) are trained with three-stage progressive fine-tuning and a combined CE--focal--Dice loss across three random seeds. ResNet50 achieves $97.5 \pm 0.2\%$ overall accuracy (OA), surpassing the best published Indian SVM (91.01\%) by six points. An improved SVM reaches $92.6 \pm 1.4\%$, beating the published baseline but trailing deep learning by five points. The first Leave-One-City-Out (LOCO) benchmark for Indian metros reveals a 15--20\% cross-city accuracy drop and a CNN--Transformer ranking reversal where Swin-Tiny ($79.1 \pm 3.9\%$) generalizes better than ResNet50 ($77.1 \pm 5.1\%$). The pipeline produces uncertainty-calibrated 2024--2035 forecasts and, in a seven-city encroachment simulation, generates 55 simulated alerts with rule-based routing to the appropriate Indian regulatory authority.
+Rapid, uncontrolled urban expansion in Indian metropolitan regions threatens legally protected ecological zones, yet existing studies largely rely on single-city, single-seed SVM/Random-Forest classifiers and stop short of forecasting or alerting. We present an end-to-end framework that unifies transfer-learning land-cover classification, SAR--optical fusion, self-supervised pre-training, uncertainty-aware forecasting, and regulatory encroachment alerting. Using Sentinel-2 imagery over Mumbai, Delhi~NCR, and Bangalore, we construct a benchmark of 2{,}730 patches under a novel three-class taxonomy (Urban, Non-Urban, Transition) auto-labelled from ESA WorldCover~2021, and evaluate six models across three random seeds. With three-stage progressive fine-tuning and a combined cross-entropy--focal--Dice loss, ResNet50 attains $97.5 \pm 0.2\%$ overall accuracy (OA)---six points above the best published Indian SVM (91.01\%); even an optimised SVM ($92.6\%$) trails deep learning by five points, confirming the gain is not an artefact of a weak baseline. We further introduce the first Leave-One-City-Out (LOCO) benchmark for Indian metros, which exposes a 15--20\% cross-city accuracy drop and a CNN--Transformer ranking reversal: Swin-Tiny generalises best to unseen cities ($79.1\%$) despite lower in-distribution accuracy than ResNet50 ($77.1\%$ LOCO). Finally, the classified maps drive an uncertainty-aware Bi-LSTM that forecasts urban area to 2035 with 95\% confidence intervals, and a rule-based engine that flags predicted encroachments on protected zones and routes them to the responsible authority (55 alerts in a seven-city simulation). All results are reported as mean$\pm$std over three seeds.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -157,7 +124,7 @@ World Bank~\cite{worldbank2024} & AI City Monitoring & Global sat.\ & 2024 & CNN
 \end{tabular}
 \end{table*}
 
-\emph{Transfer learning for EO.} On EuroSAT, ResNet50, EfficientNet, and ViT reach 96.78--98.57\% OA~\cite{he2016,tan2019,helber2019,dosovitskiy2021}, but transferability to Indian imagery is unexplored. \emph{Indian urban classification} is dominated by SVM/RF (best: 91.01\%~\cite{chamoli2024}); binary single-region ensembles reach 98.21\%~\cite{katpadi2025} but none perform multi-city LOCO analysis. \emph{Cross-city transfer}~\cite{li2023,wang2023} and a 2025 review of 89 S2 studies~\cite{mdpi2025} report 15--25\% deploy gaps; our 18\% confirms this for Indian metros. \emph{Siamese change detection} on LEVIR-CD has reached F1\,=\,91.21\%~\cite{gasnet2023} but does not forecast or alert. \emph{CNN vs.\ transformer:} transformers outperform CNNs OOD~\cite{bai2021} while CNNs win on small datasets~\cite{springerbigdata2023,appliedintel2024}---consistent with our reversal. \emph{Indian forecasting} relies on CA-Markov~\cite{camarkov2025,lucknow2025,caann2025} without uncertainty quantification. \emph{The gap:} no published work connects, for Indian metros, multi-seed DL classification, LOCO generalization, uncertainty-aware forecasting, and regulatory alerting in a single pipeline.
+On EuroSAT, CNNs and ViTs reach 96.78--98.57\% OA~\cite{he2016,tan2019,helber2019,dosovitskiy2021}, but transferability to Indian imagery is unexplored. Indian urban classification is dominated by SVM/RF (best 91.01\%~\cite{chamoli2024}); a binary single-region ensemble reaches 98.21\%~\cite{katpadi2025} but none perform multi-city LOCO. Cross-city transfer~\cite{li2023,wang2023} and a 2025 review of 89 S2 studies~\cite{mdpi2025} report 15--25\% deploy gaps, matching our 18\%. Change detection on LEVIR-CD reaches F1\,=\,91.21\%~\cite{gasnet2023} but neither forecasts nor alerts, and Indian forecasting~\cite{camarkov2025,lucknow2025,caann2025} omits uncertainty. Transformers beat CNNs out-of-distribution~\cite{bai2021} while CNNs win on small data~\cite{springerbigdata2023,appliedintel2024}, consistent with our reversal. \emph{The gap:} no published work connects multi-seed DL classification, LOCO generalisation, uncertainty-aware forecasting, and regulatory alerting for Indian metros in a single pipeline.
 
 %% ============================================================
 %%  III. DATASET CHARACTERISTICS AND TOOLS
@@ -167,14 +134,6 @@ World Bank~\cite{worldbank2024} & AI City Monitoring & Global sat.\ & 2024 & CNN
 \subsection{Study Area, Data Sources, and Processing}
 
 Three Indian metropolitan archetypes are selected: Mumbai (coastal megacity, constrained by the Arabian Sea and Sanjay Gandhi NP), Delhi~NCR (radial sprawl with satellite towns), and Bangalore (IT-corridor city with dispersed built-up nuclei). All satellite imagery is exported via the Google Earth Engine (GEE) Python API ($\sim$5.7\,GB total). Sentinel-2 L2A (10\,m, 6 bands B2/3/4/8/11/12, 2017--2023, SCL cloud-masked, pre-monsoon composites)~\cite{sentinel2} serves as the primary classification input; Sentinel-1 SAR (10\,m, VV/VH, 2023 post-monsoon, $3{\times}3$ speckle-filtered, dB-clipped $[-30, 0]$)~\cite{sentinel1} is used for the fusion experiment; Landsat 5/7/8/9 (30\,m, harmonized 6-band composites for 1990/2000/2010/2023)~\cite{landsat} provides historical anchors for the Bi-LSTM forecaster only. From these GeoTIFFs, $256{\times}256$ patches are extracted at the native sensor resolution, producing 2{,}730 optical patches and 910 co-located SAR patches. The dataset is split 70/15/15 (train/val/test) with three additional LOCO folds for cross-city evaluation.
-
-\begin{figure*}[t]
-  \centering
-  \includegraphics[width=0.68\textwidth]{fig1_architecture.png}
-  \vspace{-1.5em}
-  \caption{Proposed end-to-end framework. Raw Sentinel-1/2 and Landsat imagery flows through the classifier, is aggregated into a city-year urban-area time series, forecasted with Bi-LSTM + MC Dropout, and converted into regulatory encroachment alerts.}
-  \label{fig:architecture}
-\end{figure*}
 
 \subsection{Labels, Taxonomy, and Dataset Statistics}
 
@@ -187,7 +146,28 @@ Three Indian metropolitan archetypes are selected: Mumbai (coastal megacity, con
 %% ============================================================
 \section{Proposed Methodology}
 
-\Cref{fig:architecture} illustrates the proposed end-to-end framework, which comprises a transfer-learning classifier, an FPN-enhanced feature head, SAR--optical fusion, SimCLR self-supervised pre-training, a Bi-LSTM temporal forecaster, and a regulatory-aware alert engine.
+\Cref{fig:flowchart} summarises the proposed end-to-end framework as a step-by-step methodology flowchart, comprising a transfer-learning classifier, an FPN-enhanced feature head, SAR--optical fusion, SimCLR self-supervised pre-training, a Bi-LSTM temporal forecaster, and a regulatory-aware alert engine.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=5.5mm,
+  box/.style={rectangle, rounded corners, draw=black, fill=black!4, text width=0.86\columnwidth, align=center, minimum height=7mm, font=\scriptsize, inner sep=3pt},
+  arr/.style={-{Latex[length=2mm]}, semithick}
+]
+\node[box] (n1) {\textbf{1. Satellite imagery} -- Sentinel-2 (10\,m), Sentinel-1 SAR, Landsat; GEE cloud-masked seasonal composites};
+\node[box, below=of n1] (n2) {\textbf{2. Patch classifier} -- ImageNet-pretrained backbone + 3-level FPN, three-stage progressive fine-tuning, CE+Focal+Dice loss $\Rightarrow$ Urban / Non-Urban / Transition};
+\node[box, below=of n2] (n3) {\textbf{3. Aggregate} -- count Urban pixels per city per year $\Rightarrow$ urban-area time series};
+\node[box, below=of n3] (n4) {\textbf{4. Forecast (Pillar IV)} -- Bi-LSTM + attention + MC Dropout $\Rightarrow$ 2024--2035 projection with 95\% CI};
+\node[box, below=of n4] (n5) {\textbf{5. Alert engine (Pillar V)} -- intersect with CRZ / forest / wetland zones $\Rightarrow$ severity-ranked alerts routed to MoEFCC / CZMA};
+\draw[arr] (n1) -- (n2);
+\draw[arr] (n2) -- (n3);
+\draw[arr] (n3) -- (n4);
+\draw[arr] (n4) -- (n5);
+\end{tikzpicture}
+\caption{Step-by-step methodology flowchart: raw imagery is classified per patch, aggregated into per-city urban-area time series, forecast with an uncertainty-aware Bi-LSTM, and converted into regulatory encroachment alerts.}
+\label{fig:flowchart}
+\end{figure}
 
 \subsection{Backbones, FPN Head, and Progressive Fine-Tuning}
 
@@ -210,7 +190,7 @@ A dual-branch encoder processes 6-channel optical and 2-channel SAR inputs separ
 
 \subsection{Bi-LSTM Forecaster and Alert Engine}
 
-For bi-temporal change detection on LEVIR-CD, a shared-weight Siamese EfficientNet-B0 encoder extracts features from each temporal image; the absolute feature difference is passed to a two-layer MLP classification head. The forecasting module is a bidirectional LSTM~\cite{hochreiter1997,schuster1997bidir} with residual connections, LayerNorm, 2-head temporal attention~\cite{vaswani2017attention}, and Monte-Carlo Dropout~\cite{gal2016mcdropout} ($p = 0.2$) yielding 94K parameters. Each time step receives the satellite-derived urban area plus fifteen socio-economic and policy features. Temporal split: train 1990--2015, validation 2016--2019, test 2020--2023. Fifty MC forward passes produce 95\% CIs on 2024--2035 forecasts. A three-head change detector then classifies each patch for (i) change / no-change, (ii) severity $\in \{\text{NONE, LOW, MED, HIGH, CRIT}\}$, and (iii) encroachment type, encoding ten India-specific regulatory zone types (CRZ-I/II/III, Forest Reserve, Protected Forest, Wetland, Lake Buffer, River Floodplain, Green Belt, Western Ghats ESA) and 30+ named protected areas; alerts are auto-routed to MoEFCC, CZMA, or the State Forest Department.
+For bi-temporal change detection on LEVIR-CD, a shared-weight Siamese EfficientNet-B0 encoder produces per-image features whose absolute difference feeds a two-layer MLP head. The forecaster is a bidirectional LSTM~\cite{hochreiter1997,schuster1997bidir} with residual connections, LayerNorm, 2-head temporal attention~\cite{vaswani2017attention}, and Monte-Carlo Dropout~\cite{gal2016mcdropout} ($p=0.2$; 94K parameters); each time step receives the satellite-derived urban area plus fifteen socio-economic/policy features (temporal split: train 1990--2015, val 2016--2019, test 2020--2023), and fifty MC passes give 95\% CIs on 2024--2035 forecasts. A three-head change detector then predicts (i)~change/no-change, (ii)~severity (NONE--CRITICAL), and (iii)~encroachment type, encoding ten India-specific regulatory zone types (CRZ-I/II/III, Forest Reserve, Wetland, River Floodplain, Green Belt, Western Ghats ESA, etc.) and 30+ named protected areas, with alerts auto-routed to MoEFCC, CZMA, or the State Forest Department.
 
 At inference time, the integrated pipeline slides a $256{\times}256$ window over each GeoTIFF, counts Urban pixels to build the city-year area series $\mathbf{u}_c = [a_{c,1990}, \ldots, a_{c,2023}]$, runs fifty MC-Dropout forward passes through the Bi-LSTM to obtain $\hat{a}_{c,t}$ with 95\% CI for $t \in [2024, 2035]$, intersects each forecast zone with the regulatory database, and routes each alert to the correct authority.
 
@@ -220,6 +200,8 @@ At inference time, the integrated pipeline slides a $256{\times}256$ window over
 \section{Result Analysis and Discussions}
 
 All results are reported as mean\,$\pm$\,std over three random seeds $\{42, 123, 7\}$; significance uses paired $t$-tests at $p < 0.05$.
+
+\noindent\textbf{Key results.} ResNet50 gives the best in-distribution accuracy (\textbf{97.5\%} OA, Table~\ref{tab:main}); Swin-Tiny gives the best cross-city generalisation (\textbf{79.1\%} LOCO OA, Table~\ref{tab:loco}); the ablation, SAR-fusion, SSL, and efficiency comparisons are consolidated in Table~\ref{tab:combined}; and the integrated pipeline produces calibrated 2024--2035 forecasts (\Cref{fig:timeseries}) and 55 routed encroachment alerts.
 
 \subsection{Main Benchmark on Real Indian Data}
 
@@ -247,7 +229,7 @@ Swin-Tiny              & $93.6 \pm 2.6$ & $0.939 \pm 0.024$ & $0.862 \pm 0.046$\
 \end{tabular}
 \end{table}
 
-ResNet50 wins on every metric and has the lowest seed variance, indicating both accuracy and stability, significantly outperforming MobileNetV3-Small ($p = 0.038$). Our raw-SVM result (89.2\%) matches published Indian SVM baselines (89--91\%)~\cite{chamoli2024}, confirming that WorldCover~2021 labels—despite 74.4\% global accuracy—are reliable for dense Indian metros where urban-class accuracy substantially exceeds the global figure~\cite{zanaga2022}; the improved-SVM ($92.6 \pm 1.4\%$) surpasses the best published Indian SVM~\cite{chamoli2024}---all three seeds exceed 91.01\%---while trailing ResNet50 by $\sim$5 points, establishing a hard ceiling for traditional ML. Our 97.5\% OA is within 0.7 points of the highest published Indian result---IRUNet at 98.21\%~\cite{katpadi2025}---despite being harder (3-class, multi-city, LOCO). ResNet50 Transition recall ranges 78.8--96.9\% across cities; Bangalore's lower value reflects IT-park vegetation boundary ambiguity. No prior Indian study combines multi-seed DL classification, cross-city LOCO, uncertainty-aware forecasting, and regulatory alerting in one pipeline.
+ResNet50 wins on every metric with the lowest seed variance, significantly outperforming MobileNetV3-Small ($p = 0.038$). The raw-SVM (89.2\%) matches published Indian baselines (89--91\%)~\cite{chamoli2024}, confirming WorldCover~2021 labels are reliable for dense metros where urban-class accuracy far exceeds the 74.4\% global figure~\cite{zanaga2022}. The improved SVM ($92.6\%$; all seeds $>$91.01\%) surpasses the best published Indian SVM~\cite{chamoli2024} yet trails ResNet50 by $\sim$5 points, marking a hard ceiling for traditional ML. Our 97.5\% is within 0.7 points of the top Indian result (IRUNet, 98.21\%~\cite{katpadi2025}) on a harder 3-class, multi-city, LOCO task. No prior Indian study combines multi-seed DL classification, LOCO, uncertainty-aware forecasting, and regulatory alerting in one pipeline.
 
 \subsection{Cross-City Generalization and CNN--Transformer Reversal}
 
@@ -269,7 +251,7 @@ ResNet50        & $77.1 \pm 5.1$ & $0.778 \pm 0.037$ & $0.542 \pm 0.026$\\
 \end{tabular}
 \end{table}
 
-Two findings stand out. First, a CNN--Transformer ranking reversal: ResNet50 drops 20.4\% (97.5\%$\to$77.1\%) under LOCO while Swin-Tiny drops only 14.5\% (93.6\%$\to$79.1\%), consistent with the OOD-robustness hypothesis of Bai \emph{et al.}~\cite{bai2021}. Self-attention learns abstract, transferable urban patterns while CNN filters overfit to city-specific textures (Mumbai's coastlines, Delhi's road grids). GradCAM analysis (\Cref{fig:gradcam}) confirms this: ResNet50 activations concentrate on local texture patches, whereas Transition-class heatmaps show diffuse edge attention at construction fronts. Second, a 14.5--20.4\% per-model in-distribution-to-LOCO gap (ResNet50 $97.5\to77.1$, EfficientNet-B0 $93.4\to76.8$, Swin-Tiny $93.6\to79.1$) independently replicates the 15--25\% deploy gap reported in a 2025 systematic review of 89 Sentinel-2 studies~\cite{mdpi2025}. Delhi NCR is the hardest held-out target ($71.8$--$76.7\%$) owing to its gradual radial sprawl, while Bangalore is the easiest ($80.4$--$83.9\%$) despite being the hardest in-distribution city---a separation between local ambiguity and cross-city domain shift that is itself a novel finding.
+Two findings stand out. First, a CNN--Transformer ranking reversal: ResNet50 drops 20.4\% (97.5$\to$77.1\%) under LOCO while Swin-Tiny drops only 14.5\% (93.6$\to$79.1\%), consistent with the OOD-robustness of transformers~\cite{bai2021}---self-attention learns transferable urban patterns while CNN filters overfit city-specific textures, as GradCAM (\Cref{fig:gradcam}) confirms. Second, the 14.5--20.4\% in-distribution-to-LOCO gap replicates the 15--25\% deploy gap from a 2025 review of 89 Sentinel-2 studies~\cite{mdpi2025}. Delhi~NCR is the hardest held-out target ($71.8$--$76.7\%$, gradual radial sprawl) while Bangalore is easiest ($80.4$--$83.9\%$) despite being hardest in-distribution---separating local ambiguity from cross-city shift, itself a novel finding.
 
 \subsection{Ablation, SAR Fusion, SSL, and Efficiency}
 
@@ -327,7 +309,7 @@ SSL    & ImageNet init  & $\mathbf{96.9}$ & $\mathbf{0.969}$ & $\mathbf{0.922}$\
   \label{fig:timeseries}
 \end{figure}
 
-\emph{How accurately can we predict future sprawl?} The Bi-LSTM, trained on Census/RBI socio-economic features and satellite-derived urban areas, reaches $R^2 = 0.9564$ (MAE\,=\,119.5\,km$^2$, MAPE\,=\,6.66\%). With only four real satellite anchor years, $R^2$ drops to $0.559$ vs.\ Ridge ($R^2 = 0.601$). The LSTM's key advantage is uncertainty quantification via MC Dropout: the 95\% CI bands (\Cref{fig:timeseries}) quantify infrastructure investment risk—a capability absent from every published Indian forecasting study~\cite{camarkov2025,lucknow2025,caann2025}.
+\emph{How accurately can we forecast sprawl?} The Bi-LSTM reaches $R^2=0.956$ (MAE\,=\,119.5\,km$^2$) on calibrated series; on four real satellite anchor years it drops to $R^2=0.559$ vs.\ Ridge ($0.601$). Its key advantage is MC-Dropout uncertainty: the 95\% CI bands (\Cref{fig:timeseries}) quantify infrastructure-investment risk---absent from every published Indian forecasting study~\cite{camarkov2025,lucknow2025,caann2025}.
 \emph{Can encroachment be automatically flagged?} On the LEVIR-CD benchmark~\cite{chen2020levir}, our Siamese EfficientNet-B0 reaches F1\,=\,0.949 (OA\,=\,94.5\%). The three-head change detector reaches 99.33\% binary change accuracy at 77.5\,ms latency; a seven-city simulation produces 55 simulated alerts (4 CRITICAL, 28 HIGH, 2 MED, 21 LOW) and 11 protected-zone violations, with critical alerts near Sanjay Gandhi NP and Pallikaranai marsh routed to MoEFCC.
 \emph{How does accuracy vary across cities?} Mumbai achieves 95.1\%, Delhi NCR 94.4\%, and Bangalore 80.5\%. Bangalore's Non-Urban recall is only 10.5\% because dispersed IT-park vegetation fragments resemble Transition zones; city-wise feature clustering corroborates the LOCO drop.
 \emph{Does the model generalize across time?} Applied without retraining to 2019 and 2023 Sentinel-2, the 2021-trained ResNet50 estimates Mumbai's urban extent at 1{,}161 and 1{,}451\,km$^2$ ($+25\%$, consistent with coastal construction), while Delhi NCR and Bangalore remain saturated inside their tight bounding boxes.
@@ -337,9 +319,9 @@ SSL    & ImageNet init  & $\mathbf{96.9}$ & $\mathbf{0.969}$ & $\mathbf{0.922}$\
 %% ============================================================
 \section{Conclusion}
 
-We presented an end-to-end Indian urban expansion framework unifying classification, fusion, self-supervision, Bi-LSTM forecasting, and regulatory alerting. On real Mumbai/Delhi~NCR/Bangalore data, ResNet50 reaches $97.5 \pm 0.2\%$ OA---six points over the best published Indian SVM. The first Indian LOCO benchmark reveals a 15--20\% cross-city gap and a CNN--Transformer ranking reversal (Swin-Tiny generalizes best). The pipeline produces uncertainty-calibrated 2024--2035 forecasts and 55 simulated encroachment alerts with authority routing. The study is currently limited to three Tier-1 cities, WorldCover weak labels, a dilated Transition class, calibrated socio-economic forecasting inputs, simulation-based alerts, and seasonally mismatched SAR. \emph{Ethical considerations:} alerts are advisory; human-in-the-loop verification is required to avoid disparate impact on informal settlements.
+We presented an end-to-end framework for monitoring urban expansion in Indian metropolitan regions, unifying transfer-learning classification, SAR--optical fusion, self-supervised pre-training, uncertainty-aware Bi-LSTM forecasting, and regulatory encroachment alerting. On real Sentinel-2 data from Mumbai, Delhi~NCR, and Bangalore, progressively fine-tuned ResNet50 attains $97.5 \pm 0.2\%$ overall accuracy---six points above the best published Indian SVM baseline---while an optimised SVM ($92.6\%$) confirms that deep learning's advantage is not an artefact of a weak baseline. Our principal findings are the first Leave-One-City-Out benchmark for Indian metros, which quantifies a 15--20\% cross-city domain gap, and a CNN--Transformer ranking reversal in which Swin-Tiny generalises best to unseen cities despite lower in-distribution accuracy. The connected pipeline then converts classified maps into 2024--2035 forecasts with calibrated 95\% confidence intervals and into severity-ranked encroachment alerts routed to the responsible authority.
 
-\emph{Future work:} We plan to expand to Tier-2/3 cities, validate alerts against ground-truth municipal records, and improve SAR fusion via strict temporal alignment.
+\emph{Limitations.} The benchmark covers three Tier-1 cities, relies on weak WorldCover labels and a morphologically dilated Transition class, uses partly calibrated socio-economic inputs for forecasting, and treats alerting as a simulation rather than a validated, deployed service; SAR fusion is further constrained by seasonal misalignment. \emph{Ethically}, all alerts are advisory and require human-in-the-loop verification to avoid disparate impact on informal settlements. \emph{Future work} will extend the benchmark to Tier-2/3 cities, validate alerts against ground-truth municipal records, and strengthen SAR fusion through strict temporal alignment.
 
 %% ============================================================
 %%  ACKNOWLEDGMENT
@@ -366,6 +348,7 @@ The authors thank PES University, Bengaluru, for providing the research infrastr
 %% ============================================================
 %%  REFERENCES
 %% ============================================================
+\balance
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 

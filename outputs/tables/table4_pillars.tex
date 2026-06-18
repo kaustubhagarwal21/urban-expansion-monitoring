@@ -1,23 +1,16 @@
 \begin{table}[h]
 \centering
-\caption{Pillar experiments on Indian satellite data.}
+\caption{Pillar experiments on Indian satellite data (single seed).}
 \label{tab:pillars}
-\begin{tabular}{llccl}
+\begin{tabular}{llccc}
 \toprule
-Pillar & Configuration & Primary Metric & Secondary & Notes \\
+Pillar & Configuration & OA (\%) & F1 & mIoU \\
 \midrule
-I (SAR) & Optical-only & OA=96.7\% & F1=0.968 & Single seed \\
-I (SAR) & Optical+SAR fusion & OA=87.9\% & F1=0.870 & 910/2730 SAR pairs \\
+I (SAR) & Optical-only & 96.7 & 0.968 & 0.918 \\
+I (SAR) & Optical+SAR & 87.9 & 0.870 & 0.718 \\
 \midrule
-II (SSL) & ImageNet Init & OA=96.9\% & F1=0.969 & 8.8 min training \\
-II (SSL) & SimCLR Pretrain & OA=93.2\% & F1=0.931 & 15.9 min training \\
-\midrule
-IV (Forecast) & Bi-LSTM+Attention (standalone) & R$^2$=0.9564 & MAE=119.5 km$^2$ & 94K params \\
-IV (Forecast) & Bi-LSTM+Attention (integrated) & R$^2$=0.5590 & MAE=330.4 km$^2$ & 21-file hybrid pipeline \\
-IV (Forecast) & Ridge baseline & R$^2$=0.6006 & MAE=322.3 km$^2$ & Integrated baseline \\
-\midrule
-V (Alerts) & Change detection & Acc=99.33\% & MobileNetV3 & Standalone detector \\
-V (Alerts) & Alert simulation & 55 alerts & 77.5 ms/patch & Forecast-conditioned, 7 cities, 11 zone violations \\
+II (SSL) & ImageNet Init & 96.9 & 0.969 & 0.922 \\
+II (SSL) & SimCLR Pretrain & 93.2 & 0.931 & 0.835 \\
 \bottomrule
 \end{tabular}
 \end{table}

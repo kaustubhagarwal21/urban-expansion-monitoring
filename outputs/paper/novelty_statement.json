@@ -1,41 +1,10 @@
 {
-  "one_paragraph": "We present an integrated urban expansion monitoring framework for Indian metropolitan regions, centered on a Leave-One-City-Out (LOCO) cross-city benchmark across Mumbai, Delhi NCR, and Bangalore with 3-seed statistical validation. Using a novel 3-class taxonomy (Urban/Non-Urban/Transition) and progressive fine-tuning, we achieve 97.5 ± 0.2% OA (ResNet50) — surpassing even our optimized SVM (92.55%, above published 91.01%) by 5 points. A key finding is the CNN-Transformer ranking reversal: ResNet50 wins in-distribution but Swin-Tiny generalizes better cross-city (79.1% vs 77.1% LOCO), with the 18% domain gap validated by independent systematic reviews. The executed integration pipeline classifies 21 real GeoTIFFs across Sentinel-2 and Landsat, converts them into multi-year urban area time series, and drives a hybrid forecasting-plus-alert workflow that produces 55 forecast-conditioned simulated alerts across 7 cities. ResNet50 provides the strongest accuracy-latency compromise (97.5% OA, 199.2 patches/sec), while MobileNetV3-Small provides the smallest deployment footprint (3.4M params, 30.5 MB, 184.4 patches/sec).",
-
-  "key_novel_claims": [
-    "First multi-city LOCO cross-city generalization benchmark for Indian urban expansion using Sentinel-2 satellite imagery",
-    "End-to-end pipeline connecting satellite classification -> urban area time series -> LSTM forecasting -> forecast-conditioned regulatory encroachment alert simulation",
-    "Systematic comparison of 6 models (SVM, RF, ResNet50, EfficientNet-B0, Swin-Tiny, MobileNetV3) with 3-seed statistical validation on Indian data",
-    "Quantification of real cross-city domain gaps in Indian metros: 18% accuracy drop from in-distribution to LOCO",
-    "Integrated multi-pillar framework where each component (classification, SAR fusion, SSL pretraining, forecasting, alerting) feeds into a unified pipeline — not independent experiments but a connected system",
-    "Executed hybrid integration run: 21 real GeoTIFFs (9 Sentinel-2 + 12 Landsat) converted into city-wise time series, 2024-2035 hybrid forecasts, and a forecast-conditioned alert simulation producing 55 alerts with 11 protected-zone violations",
-    "Accuracy-efficiency trade-off analysis: ResNet50 is the best accuracy-latency compromise on our hardware (97.5% OA, 199.2 patches/sec), while MobileNetV3-Small (3.4M params, 30.5 MB, 184.4 patches/sec) quantifies the 6-point accuracy cost of prioritizing footprint over accuracy",
-    "Novel 3-class taxonomy (Urban/Non-Urban/Transition) with 100m morphological buffer — explicitly handles the mixed-pixel problem at urban boundaries that binary classification ignores",
-    "Practical decision guides from controlled experiments: SAR fusion requires temporal alignment (87.9% vs 96.7% without), SSL pretraining loses to ImageNet with sufficient labels (93.2% vs 96.9%), LSTM value is in uncertainty quantification not aggregate accuracy (R²=0.9564 vs Ridge 0.9743) — each result actionable for practitioners",
-    "First uncertainty-quantified urban expansion forecasting for Indian metros: 95% confidence intervals on 2024-2035 predictions via MC Dropout, enabling risk-aware infrastructure planning — no prior Indian urban study provides forecast uncertainty bands",
-    "India-specific regulatory alert system encoding 10 zone types (CRZ-I/II/III, Forest Reserve, Wetland, etc.), 30+ named protected areas, and 3 Indian environmental laws (CRZ Notification 2019, Forest Conservation Act 1980, Wetland Rules 2017) — no published system encodes Indian environmental law for automated encroachment detection",
-    "Unified multi-resolution forecasting: Sentinel-2 classification (10m, 2019-2023) and Landsat historical estimation (30m, 1990-2023) feed into a single LSTM model, bridging the 33-year temporal gap that no single sensor covers",
-    "Separation of local difficulty from transfer difficulty: Bangalore is hardest in-distribution because of mixed IT-corridor morphology, while Delhi NCR is the hardest held-out LOCO target and Bangalore the easiest. This is the first Indian cross-city analysis to explain WHY these difficulty regimes differ"
-  ],
-
-  "what_no_prior_work_has": [
-    "No published work evaluates cross-city transfer learning across Indian metros with LOCO protocol",
-    "To our knowledge, no published work connects satellite-based urban classification to LSTM forecasting to forecast-conditioned regulatory alert generation in a single pipeline",
-    "No published Indian urban classification study reports 3-seed mean ± std with paired significance tests",
-    "No published work compares CNN vs Transformer generalization specifically for Indian urban expansion",
-    "No published work demonstrates the CNN-Transformer ranking reversal (ResNet50 wins in-distribution but Swin-Tiny wins cross-city) on satellite urban classification",
-    "No published work quantifies the 18% cross-city domain gap specifically for Indian metros (independently validated by MDPI 2025 systematic review: 15-25% typical)",
-    "No published work shows that optimized traditional ML (SVM 92.55% with feature engineering) still loses to DL by 5 points on Indian satellite data — stronger argument than weak baseline comparison",
-    "No published Indian urban study uses a 3-class taxonomy with explicit Transition buffer to handle mixed pixels — all use binary (urban/non-urban) or multi-class without boundary modelling",
-    "No published Indian urban expansion study provides uncertainty-quantified forecasts (MC Dropout 95% CI) — existing studies give point predictions without confidence intervals",
-    "No published system encodes Indian environmental law (CRZ, Forest Act, Wetland Rules) for automated satellite-based encroachment detection with authority routing",
-    "No published work separates in-distribution city difficulty from held-out transfer difficulty across Indian metros with morphological explanations (IT-corridor vs coastal vs radial)"
-  ],
-
-  "positioning_vs_sota": {
-    "vs_eurosat_papers": "Our 97.5% OA on Indian data is competitive with EuroSAT SOTA (96.8-99.3%), but on a harder, uncurated Indian dataset with 3-class taxonomy",
-    "vs_indian_studies": "Even our optimized SVM baseline (92.55% with spectral indices + PCA + grid search) surpasses the published Indian SVM benchmark (91.01%, Chamoli 2024), yet DL still outperforms it by 5 points (97.5%). The highest Indian result (IRUNet 98.21%) is binary segmentation on one region — our 97.5% on 3-class multi-city classification is effectively harder. MobileNetV3-Small (91.5% OA, 184.4 patches/sec) matches published SVM-level accuracy in a much smaller deployment footprint, while ResNet50 remains the strongest overall deployment compromise on our hardware.",
-    "vs_cross_city_work": "Cross-city RS transfer (HighDAN, C2Seg) focuses on European/Chinese cities. We provide the first Indian metro cross-city benchmark",
-    "vs_change_detection": "Published Siamese CD methods achieve F1=87-91% on LEVIR-CD. Our framework extends beyond detection to forecasting and alerting",
-    "vs_urban_forecasting": "Published Indian urban forecasting (CA-Markov Delhi-NCR 2025, CA-ANN Smart Cities 2025, MLP-Markov Faridabad 2025) provides LULC projections without uncertainty quantification and disconnected from satellite classification pipelines. Our Bi-LSTM with MC Dropout is the first to provide 95% CI on Indian urban expansion forecasts and the first connected to an executed real satellite classification/time-series pipeline using 21 Sentinel-2/Landsat GeoTIFFs, with hybrid satellite-conditioned forecasting in the integrated setting."
-  }
+  "one_paragraph": "We present the first end-to-end urban expansion monitoring framework evaluated across multiple Indian metropolitan regions with cross-city transfer learning. Unlike prior work that evaluates on a single city or uses standard benchmarks (EuroSAT, BigEarthNet), we construct a multi-city Indian urban expansion dataset from Sentinel-2, Sentinel-1 SAR, and Landsat imagery (1990-2023) with automated labeling from ESA WorldCover. Our five-pillar framework integrates transfer learning-based classification, SAR-optical fusion, self-supervised pretraining, LSTM-based urban expansion forecasting, and real-time encroachment alerting into a unified pipeline. We demonstrate that transformer-based models (Swin-Tiny) achieve the best cross-city generalization (79.1% LOCO OA), while ResNet50 achieves the highest in-distribution accuracy (97.5 +/- 0.2%). All results are reported with 3-seed statistical validation.",
+  "key_claims": [
+    "First multi-city Indian urban expansion benchmark with cross-city LOCO evaluation",
+    "End-to-end pipeline: satellite imagery -> classification -> forecasting -> alerts",
+    "5-pillar framework covering optical, SAR, self-supervised, predictive, and real-time analysis",
+    "3-seed statistical rigor with paired significance tests",
+    "Transformer attention enables better cross-city transfer than CNNs"
+  ]
 }

@@ -1,0 +1,76 @@
+{
+  "cities": {
+    "Mumbai": {
+      "resnet50": {
+        "path": "data/indian_cities_locked\\Mumbai\\patches\\S2_Mumbai_2019_pre_monsoon\\Mumbai_000000_img.npy",
+        "ground_truth": "Non-Urban",
+        "prediction": "Non-Urban"
+      },
+      "efficientnet_b0": {
+        "path": "data/indian_cities_locked\\Mumbai\\patches\\S2_Mumbai_2019_pre_monsoon\\Mumbai_000000_img.npy",
+        "ground_truth": "Non-Urban",
+        "prediction": "Non-Urban"
+      },
+      "swin_tiny": {
+        "path": "data/indian_cities_locked\\Mumbai\\patches\\S2_Mumbai_2019_pre_monsoon\\Mumbai_000000_img.npy",
+        "ground_truth": "Non-Urban",
+        "prediction": "Non-Urban"
+      },
+      "mobilenet_v3_small": {
+        "path": "data/indian_cities_locked\\Mumbai\\patches\\S2_Mumbai_2019_pre_monsoon\\Mumbai_000000_img.npy",
+        "ground_truth": "Non-Urban",
+        "prediction": "Non-Urban"
+      }
+    },
+    "Delhi_NCR": {
+      "resnet50": {
+        "path": "data/indian_cities_locked\\Delhi_NCR\\patches\\S2_Delhi_NCR_2019_pre_monsoon\\Delhi_NCR_000000_img.npy",
+        "ground_truth": "Non-Urban",
+        "prediction": "Non-Urban"
+      },
+      "efficientnet_b0": {
+        "path": "data/indian_cities_locked\\Delhi_NCR\\patches\\S2_Delhi_NCR_2019_pre_monsoon\\Delhi_NCR_000000_img.npy",
+        "ground_truth": "Non-Urban",
+        "prediction": "Non-Urban"
+      },
+      "swin_tiny": {
+        "path": "data/indian_cities_locked\\Delhi_NCR\\patches\\S2_Delhi_NCR_2019_pre_monsoon\\Delhi_NCR_000000_img.npy",
+        "ground_truth": "Non-Urban",
+        "prediction": "Non-Urban"
+      },
+      "mobilenet_v3_small": {
+        "path": "data/indian_cities_locked\\Delhi_NCR\\patches\\S2_Delhi_NCR_2019_pre_monsoon\\Delhi_NCR_000000_img.npy",
+        "ground_truth": "Non-Urban",
+        "prediction": "Non-Urban"
+      }
+    },
+    "Bangalore": {
+      "resnet50": {
+        "path": "data/indian_cities_locked\\Bangalore\\patches\\S2_Bangalore_2019_pre_monsoon\\Bangalore_000000_img.npy",
+        "ground_truth": "Transition",
+        "prediction": "Transition"
+      },
+      "efficientnet_b0": {
+        "path": "data/indian_cities_locked\\Bangalore\\patches\\S2_Bangalore_2019_pre_monsoon\\Bangalore_000000_img.npy",
+        "ground_truth": "Transition",
+        "prediction": "Transition"
+      },
+      "swin_tiny": {
+        "path": "data/indian_cities_locked\\Bangalore\\patches\\S2_Bangalore_2019_pre_monsoon\\Bangalore_000000_img.npy",
+        "ground_truth": "Transition",
+        "prediction": "Transition"
+      },
+      "mobilenet_v3_small": {
+        "path": "data/indian_cities_locked\\Bangalore\\patches\\S2_Bangalore_2019_pre_monsoon\\Bangalore_000000_img.npy",
+        "ground_truth": "Transition",
+        "prediction": "Transition"
+      }
+    }
+  },
+  "models": [
+    "resnet50",
+    "efficientnet_b0",
+    "swin_tiny",
+    "mobilenet_v3_small"
+  ]
+}

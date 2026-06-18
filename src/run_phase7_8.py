@@ -218,7 +218,7 @@ def run_gradcam():
             cam.remove_hooks()
             plt.tight_layout()
             path = os.path.join(gradcam_dir, f"gradcam_{bb}.png")
-            plt.savefig(path, dpi=150, bbox_inches="tight")
+            plt.savefig(path, dpi=300, bbox_inches="tight")
             plt.close()
             print(f"    Saved: {path}")
 
@@ -324,7 +324,7 @@ def run_domain_shift_analysis():
 
     plt.tight_layout()
     path = os.path.join(FIGURE_DIR, "fig_domain_shift_tsne.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {path}")
 
@@ -404,7 +404,7 @@ def run_failure_analysis():
     plt.suptitle("Per-City Confusion Matrices (ResNet50)", fontsize=14, fontweight="bold")
     plt.tight_layout()
     path = os.path.join(FIGURE_DIR, "fig_per_city_confusion.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {path}")
 
@@ -437,7 +437,7 @@ def run_failure_analysis():
         plt.suptitle("Misclassified Patches", fontsize=12, fontweight="bold")
         plt.tight_layout()
         path = os.path.join(FIGURE_DIR, "fig_failure_cases.png")
-        plt.savefig(path, dpi=150, bbox_inches="tight")
+        plt.savefig(path, dpi=300, bbox_inches="tight")
         plt.close()
         print(f"  Saved: {path}")
 
@@ -500,7 +500,7 @@ def generate_fig1_architecture():
 
     plt.tight_layout()
     path = os.path.join(FIGURE_DIR, "fig1_architecture.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight", facecolor="white")
+    plt.savefig(path, dpi=300, bbox_inches="tight", facecolor="white")
     plt.close()
     print(f"    Saved: {path}")
 
@@ -543,7 +543,7 @@ def generate_fig_model_comparison():
     plt.suptitle("Model Performance on Indian Cities (3-seed mean +/- std)", fontsize=14, fontweight="bold")
     plt.tight_layout()
     path = os.path.join(FIGURE_DIR, "fig2_model_comparison.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"    Saved: {path}")
 
@@ -588,7 +588,7 @@ def generate_fig_loco_heatmap():
 
     plt.tight_layout()
     path = os.path.join(FIGURE_DIR, "fig3_loco_heatmap.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"    Saved: {path}")
 
@@ -638,7 +638,7 @@ def generate_fig_urban_timeseries():
 
     plt.tight_layout()
     path = os.path.join(FIGURE_DIR, "fig4_urban_timeseries.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"    Saved: {path}")
 
@@ -672,7 +672,7 @@ def generate_fig_ablation():
 
     plt.tight_layout()
     path = os.path.join(FIGURE_DIR, "fig5_ablation.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"    Saved: {path}")
 
@@ -711,7 +711,7 @@ def generate_fig_pillar_comparison():
 
     plt.tight_layout()
     path = os.path.join(FIGURE_DIR, "fig6_pillar_comparison.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"    Saved: {path}")
 
@@ -1068,7 +1068,7 @@ def generate_temporal_validation():
 
         plt.tight_layout()
         path = os.path.join(FIGURE_DIR, "fig7_temporal_validation.png")
-        plt.savefig(path, dpi=200, bbox_inches="tight")
+        plt.savefig(path, dpi=300, bbox_inches="tight")
         plt.close()
         print(f"  Saved: {path}")
 
@@ -1125,7 +1125,7 @@ if __name__ == "__main__":
         ax.grid(True, alpha=0.3)
         plt.tight_layout()
         path = os.path.join(FIGURE_DIR, "fig8_efficiency_accuracy.png")
-        plt.savefig(path, dpi=200, bbox_inches="tight")
+        plt.savefig(path, dpi=300, bbox_inches="tight")
         plt.close()
         print(f"    Saved: {path}")
 

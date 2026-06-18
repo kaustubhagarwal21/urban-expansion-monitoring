@@ -149,7 +149,7 @@ def fig_model_comparison(results_path=None):
     plt.tight_layout()
 
     path = os.path.join(FIGURE_DIR, "fig3_model_comparison.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"  Fig 3 saved: {path}")
 
@@ -198,7 +198,7 @@ def fig_efficiency_accuracy(results_path=None, efficiency_path=None):
 
     plt.tight_layout()
     path = os.path.join(FIGURE_DIR, "fig7_efficiency_accuracy.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"  Fig 7 saved: {path}")
 
@@ -234,7 +234,7 @@ def fig_per_class_performance(results_path=None):
 
     plt.tight_layout()
     path = os.path.join(FIGURE_DIR, "fig8_performance_heatmap.png")
-    plt.savefig(path, dpi=200, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"  Fig 8 saved: {path}")
 

@@ -6,16 +6,13 @@
 \toprule
 Model & OA (\%) & F1 & mIoU \\
 \midrule
-SVM (raw pixels) & 89.2 $\pm$ 0.4 & 0.890 $\pm$ 0.005 & 0.763 $\pm$ 0.009 \\
-SVM (improved$^\dagger$) & 92.6 $\pm$ 1.4 & 0.899 $\pm$ 0.018 & -- \\
+SVM & 89.2 $\pm$ 0.4 & 0.890 $\pm$ 0.005 & 0.763 $\pm$ 0.009 \\
 Random Forest & 88.2 $\pm$ 1.7 & 0.875 $\pm$ 0.017 & 0.733 $\pm$ 0.028 \\
-RF (improved$^\dagger$) & 90.7 $\pm$ 1.4 & 0.871 $\pm$ 0.017 & -- \\
 \midrule
 MobileNetV3-Small & 91.5 $\pm$ 1.6 & 0.920 $\pm$ 0.014 & 0.823 $\pm$ 0.028 \\
-EfficientNet-B0 & 93.4 $\pm$ 2.3 & 0.936 $\pm$ 0.021 & 0.857 $\pm$ 0.044 \\
+EfficientNet-B0 & 93.3 $\pm$ 2.3 & 0.936 $\pm$ 0.021 & 0.857 $\pm$ 0.044 \\
 Swin-Tiny & 93.6 $\pm$ 2.6 & 0.939 $\pm$ 0.024 & 0.862 $\pm$ 0.046 \\
 ResNet50 & \textbf{97.5 $\pm$ 0.2} & \textbf{0.976 $\pm$ 0.002} & \textbf{0.939 $\pm$ 0.005} \\
 \bottomrule
-\multicolumn{4}{l}{\footnotesize $^\dagger$ Improved: +spectral indices (NDVI, NDBI, NDWI, SAVI, BSI), texture features, StandardScaler, PCA, grid search.} \\
 \end{tabular}
 \end{table}

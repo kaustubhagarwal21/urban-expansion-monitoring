@@ -49,7 +49,7 @@ def plot_training_curves(history, backbone_name, save_dir=FIGURE_DIR):
 
     plt.tight_layout()
     path = os.path.join(save_dir, f"training_curves_{backbone_name}.png")
-    plt.savefig(path, dpi=150, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {path}")
 
@@ -66,7 +66,7 @@ def plot_confusion_matrix(cm, class_names, title, save_dir=FIGURE_DIR):
     plt.tight_layout()
     safe_title = title.replace(" ", "_").replace("/", "_")
     path = os.path.join(save_dir, f"cm_{safe_title}.png")
-    plt.savefig(path, dpi=150, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {path}")
 
@@ -101,7 +101,7 @@ def plot_model_comparison(all_results, save_dir=FIGURE_DIR):
     ax.grid(axis="y", alpha=0.3)
     plt.tight_layout()
     path = os.path.join(save_dir, "model_comparison.png")
-    plt.savefig(path, dpi=150, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {path}")
 
@@ -142,7 +142,7 @@ def plot_urban_growth(save_dir=FIGURE_DIR):
 
     plt.tight_layout()
     path = os.path.join(save_dir, "urban_growth_patterns.png")
-    plt.savefig(path, dpi=150, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {path}")
 
@@ -166,7 +166,7 @@ def plot_sample_patches(save_dir=FIGURE_DIR):
     plt.suptitle("Sample Synthetic Multispectral Patches (RGB Composite)", fontsize=14)
     plt.tight_layout()
     path = os.path.join(save_dir, "sample_patches.png")
-    plt.savefig(path, dpi=150, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {path}")
 
@@ -230,6 +230,6 @@ def plot_architecture_diagram(save_dir=FIGURE_DIR):
                  fontweight="bold", pad=10)
     plt.tight_layout()
     path = os.path.join(save_dir, "architecture_diagram.png")
-    plt.savefig(path, dpi=150, bbox_inches="tight")
+    plt.savefig(path, dpi=300, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {path}")

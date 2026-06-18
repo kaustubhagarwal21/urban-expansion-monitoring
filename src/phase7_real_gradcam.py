@@ -104,7 +104,7 @@ def generate_real_gradcam_grid(device="cuda"):
     fig.suptitle("Phase 7: Real Indian GradCAM", fontsize=14, fontweight="bold")
     plt.tight_layout()
     fig_path = os.path.join(FIGURE_DIR, "phase7_real_gradcam.png")
-    plt.savefig(fig_path, dpi=200, bbox_inches="tight")
+    plt.savefig(fig_path, dpi=300, bbox_inches="tight")
     plt.close(fig)
 
     meta_path = os.path.join(FIGURE_DIR, "phase7_real_gradcam_metadata.json")
