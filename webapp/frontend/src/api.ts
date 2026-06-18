@@ -103,7 +103,7 @@ export interface PresenterPayload { total_minutes: number; beats: Beat[]; tips: 
 
 export interface ClassifyUploadResult extends ClassifyResult {}
 
-export interface FigureItem { file: string; group: string; title: string; caption: string; read: string; takeaway: string; }
+export interface FigureItem { file: string; group: string; title: string; caption: string; read: string; takeaway: string; in_paper?: boolean; }
 export interface FiguresPayload { figures: FigureItem[]; }
 
 export interface TourSlide { kicker: string; title: string; body?: string; points?: string[]; goto?: { route: string; label: string }; }

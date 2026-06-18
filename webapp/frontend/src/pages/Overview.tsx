@@ -65,11 +65,15 @@ export default function Overview() {
         ))}
       </div>
 
-      {/* official paper figure */}
+      {/* system framework diagram */}
       <div className="panel pad reveal" style={{ marginTop: 30 }}>
-        <div className="eyebrow" style={{ marginBottom: 14 }}>Paper Figure 1 · Five-pillar architecture</div>
+        <div className="eyebrow" style={{ marginBottom: 14 }}>System framework · Five pillars</div>
         <img src={api.figure("fig1_architecture.png")} alt="Five-pillar framework architecture"
           style={{ width: "100%", borderRadius: 10, border: "1px solid var(--line)", background: "#fff" }} />
+        <div className="muted" style={{ fontSize: 12.5, marginTop: 10, lineHeight: 1.6 }}>
+          The full five-pillar system. In the 6-page camera-ready paper this is condensed into a step-by-step
+          methodology flowchart (Fig 1); the per-stage view above mirrors the pipeline on this page.
+        </div>
       </div>
 
       <style>{`

@@ -321,3 +321,76 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; lett
 .start-here { display: inline-flex; align-items: center; gap: 7px; border-color: var(--cyan); color: var(--cyan); }
 .start-here:hover { background: rgba(63,212,196,0.12); }
 .start-here .sh-q { width: 16px; height: 16px; border-radius: 50%; background: var(--cyan); color: #04110f; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; }
+
+/* theme toggle */
+.theme-toggle { display: inline-flex; align-items: center; gap: 7px; }
+.theme-toggle svg { width: 15px; height: 15px; }
+
+/* ============================================================
+   LIGHT MODE  —  high-contrast daylight palette
+   Activated by <html data-theme="light">. Everything below is
+   either a CSS-variable override (covers ~90% of the UI) or a
+   targeted fix for the few hardcoded dark surfaces.
+   ============================================================ */
+:root[data-theme="light"] {
+  /* surfaces */
+  --ink:        #eef2f6;
+  --ink-2:      #f4f8fc;
+  --panel:      #ffffff;
+  --panel-2:    #eef3f8;
+  --panel-3:    #e2e9f1;
+  --line:       rgba(28, 58, 88, 0.14);
+  --line-strong:rgba(28, 58, 88, 0.26);
+
+  /* text — dark on light, all WCAG-AA on white */
+  --text:       #0e1b27;
+  --text-dim:   #41566a;
+  --text-faint: #6c8195;
+
+  /* signal palette — darkened so they read as text/accents on white */
+  --cyan:    #0b897c;
+  --cyan-dim:#0a6b62;
+  --amber:   #b06d10;
+  --green:   #1f9a55;
+  --blue:    #2576bd;
+  --violet:  #5f50c6;
+  --red:     #cc3a3a;
+
+  /* class semantic (used as tag text + chart fills) */
+  --c-urban:      #c2790f;
+  --c-nonurban:   #228f51;
+  --c-transition: #2a7fc4;
+
+  --shadow: 0 14px 34px -22px rgba(20, 45, 75, 0.30);
+}
+
+/* base page wash: soften the accent radials for a clean daylight look */
+:root[data-theme="light"] body {
+  background:
+    radial-gradient(900px 600px at 82% -8%, rgba(11, 137, 124, 0.07), transparent 60%),
+    radial-gradient(800px 700px at 8% 108%, rgba(176, 109, 16, 0.05), transparent 55%),
+    var(--ink);
+}
+:root[data-theme="light"] body::before {
+  background-image:
+    linear-gradient(to right, rgba(28, 58, 88, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(28, 58, 88, 0.05) 1px, transparent 1px);
+}
+
+/* hardcoded dark surfaces -> light equivalents */
+:root[data-theme="light"] .sidebar {
+  background: linear-gradient(180deg, #ffffff, #eef3f8);
+}
+:root[data-theme="light"] .topbar {
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.72));
+}
+:root[data-theme="light"] .brand .glyph::after { border-color: rgba(255,255,255,0.9); }
+
+/* dark text printed on accent fills -> white for contrast on the darker light-mode accents */
+:root[data-theme="light"] .btn.primary,
+:root[data-theme="light"] .btn.primary:hover,
+:root[data-theme="light"] .rt-ic,
+:root[data-theme="light"] .start-here .sh-q,
+:root[data-theme="light"] .tl-step.on,
+:root[data-theme="light"] .fig-badge,
+:root[data-theme="light"] .qa-sev { color: #ffffff; }

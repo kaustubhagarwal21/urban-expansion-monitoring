@@ -49,10 +49,25 @@ const NAV = [
   { to: "/presenter", idx: "13", label: "Presenter Mode" },
 ];
 
+const SunIcon = () => (
+  <svg {...S}><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" /></svg>
+);
+const MoonIcon = () => (
+  <svg {...S}><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.5 6.5 0 0 0 9.8 9.8z" /></svg>
+);
+
 export default function App() {
   const [online, setOnline] = useState<boolean | null>(null);
   const [models, setModels] = useState<string[]>([]);
   const [tourOpen, setTourOpen] = useState(false);
+  const [theme, setTheme] = useState<"dark" | "light">(
+    () => (localStorage.getItem("lm_theme") === "light" ? "light" : "dark")
+  );
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("lm_theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     let alive = true;
@@ -115,6 +130,14 @@ export default function App() {
         <header className="topbar">
           <div className="eyebrow">Transfer Learning · Indian Metropolitan Regions</div>
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+            <button
+              className="btn theme-toggle"
+              onClick={() => setTheme((t) => (t === "dark" ? "light" : "dark"))}
+              title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+            >
+              {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+              {theme === "dark" ? "Light" : "Dark"}
+            </button>
             <button className="btn start-here" onClick={() => setTourOpen(true)} title="New here? Start the guided tour">
               <span className="sh-q">?</span> Start Here
             </button>

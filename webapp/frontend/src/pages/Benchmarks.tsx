@@ -70,7 +70,7 @@ export default function Benchmarks() {
             <Tooltip cursor={{ fill: "rgba(120,165,190,0.06)" }} contentStyle={{ background: "var(--panel-2)", border: "1px solid var(--line-strong)", borderRadius: 10, fontFamily: "var(--font-mono)", fontSize: 12 }} formatter={(v: any) => [`${v}%`, "OA"]} />
             <Bar dataKey="oa" radius={[5, 5, 0, 0]}>
               {chartData.map((d, i) => (<Cell key={i} fill={FAMILY_COLOR[d.family] || "#3fd4c4"} />))}
-              <ErrorBar dataKey="err" width={5} strokeWidth={1.5} stroke="#e9f0f4" direction="y" />
+              <ErrorBar dataKey="err" width={5} strokeWidth={1.5} stroke="#64788a" direction="y" />
             </Bar>
           </BarChart>
         </ResponsiveContainer>

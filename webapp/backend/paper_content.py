@@ -10,7 +10,7 @@ Sources: paper/main.tex (quotes) + paper/PAPER_EXPLAINED.md (plain wording).
 
 PAPER_TITLE = "Urban Expansion Monitoring Using Transfer Learning on Historical Satellite Imagery"
 VENUE = "Accepted — IEEE CHANDICON 2026"
-AUTHORS = "Kaustubh Agarwal, Prajwal Gupta, Kabir Rai, P Manideep Reddy, Naman Khurana, Dr. Divyashree N — PES University, Bengaluru"
+AUTHORS = "Kaustubh Agarwal, Prajwal Gupta, Kabir Rai, P Manideep Reddy, Naman Khurana, and Divyashree N — PES University, Bengaluru"
 
 SECTIONS = [
     {

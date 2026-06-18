@@ -18,15 +18,19 @@ export default function Figures() {
 
   return (
     <div>
-      <SectionHead eyebrow="Results Gallery" title="Paper figures">
-        Every figure is a real result from the study — click any to enlarge. Use these as backup slides or to
-        answer a question with the exact chart.
+      <SectionHead eyebrow="Project & Supporting Figures" title="Figures gallery">
+        The full analysis figure library behind the study — click any to enlarge. The 6-page camera-ready
+        paper carries only three figures (the methodology flowchart, the Grad-CAM triptych, and the time
+        series); those are marked <b style={{ color: "var(--cyan)" }}>IN PAPER</b>. The rest are supporting
+        analysis and make great backup slides for Q&A.
       </SectionHead>
 
       <ReadThis>
-        Figures are grouped by theme (Architecture → Data → Results → Explainability → Analysis), roughly the
-        order of the paper. <b>Click any figure to open it large</b> — the zoomed view explains <b>how to read
-        the chart</b> and gives the <b>one-line takeaway</b>, so you can narrate any figure even if a question
+        Figures are grouped by theme (Architecture → Data → Results → Explainability → Analysis). The
+        <b style={{ color: "var(--cyan)" }}> IN PAPER</b> badge marks figures that appear in the published
+        paper; un-badged ones are extended analysis (several became tables in the paper to fit the page
+        limit). <b>Click any figure to open it large</b> — the zoomed view explains <b>how to read the
+        chart</b> and gives the <b>one-line takeaway</b>, so you can narrate any figure even if a question
         comes from left field.
       </ReadThis>
 
@@ -36,7 +40,10 @@ export default function Figures() {
           <div className="fig-grid">
             {grp.items.map((f) => (
               <button key={f.file} className="fig-card" onClick={() => setZoom(f)}>
-                <div className="fig-img"><img src={api.figure(f.file)} alt={f.title} loading="lazy" /></div>
+                <div className="fig-img">
+                  {f.in_paper && <span className="fig-badge">In paper</span>}
+                  <img src={api.figure(f.file)} alt={f.title} loading="lazy" />
+                </div>
                 <div className="fig-meta">
                   <div className="fig-title">{f.title}</div>
                   <div className="fig-cap">{f.caption}</div>
@@ -53,7 +60,7 @@ export default function Figures() {
             <button className="lb-close" onClick={() => setZoom(null)}>✕</button>
             <img src={api.figure(zoom.file)} alt={zoom.title} />
             <div className="lb-cap">
-              <b>{zoom.title}</b>
+              <b>{zoom.title}{zoom.in_paper && <span className="fig-badge lb-badge">In paper</span>}</b>
               <span>{zoom.caption}</span>
               <div className="lb-detail">
                 <div className="lb-box"><span className="lb-tag">How to read it</span><Glossarize text={zoom.read} /></div>
@@ -70,7 +77,9 @@ export default function Figures() {
         @media (max-width: 640px) { .fig-grid { grid-template-columns: 1fr; } }
         .fig-card { text-align: left; padding: 0; background: linear-gradient(180deg, var(--panel), var(--ink-2)); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; transition: all 0.18s; display: flex; flex-direction: column; }
         .fig-card:hover { border-color: var(--cyan); transform: translateY(-3px); box-shadow: var(--shadow); }
-        .fig-img { background: #fff; aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .fig-img { position: relative; background: #fff; aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .fig-badge { position: absolute; top: 8px; left: 8px; z-index: 1; font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; background: var(--cyan); color: #04110f; font-weight: 700; box-shadow: 0 2px 10px -2px var(--cyan); }
+        .lb-badge { position: static; display: inline-block; margin-left: 10px; vertical-align: middle; }
         .fig-img img { width: 100%; height: 100%; object-fit: contain; }
         .fig-meta { padding: 12px 14px; }
         .fig-title { font-family: var(--font-display); font-size: 15px; }
